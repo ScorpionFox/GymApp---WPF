@@ -10,4 +10,13 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.17" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Motywy\" />
+    <Folder Include="MVVM\Model\" />
+    <Folder Include="MVVM\ModelWidoku\" />
+    <Folder Include="MVVM\Widok\" />
+    <Folder Include="Zdjęcia\" />
+    <Folder Include="Czcionki\" />
+  </ItemGroup>
+
 </Project>
