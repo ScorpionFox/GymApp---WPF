@@ -5,9 +5,50 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PROJECT"
         mc:Ignorable="d"
-        Height="450" Width="800">
-    <Grid RenderTransformOrigin="0.449,0.584">
-        <DataGrid/>
-<!-- XD -->
-    </Grid>
+        Height="600" Width="920"
+        WindowStyle= "None"
+        ResizeMode="NoResize"
+        Background="Transparent"
+        AllowsTransparency="True">
+    <Border Background="#151336" CornerRadius="30">
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="250"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="80"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <TextBlock Text="Siłownia"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       Foreground="LightGray"
+                       FontSize="25"
+                       Margin="0"/>
+
+            <StackPanel Grid.Row="1">
+                <RadioButton Content="Pierwsze"
+                             Height="50"
+                             Foreground="LightGray"
+                             FontSize="16"
+                             Style="{StaticResource PrzyciskiMenu}"/>
+                <RadioButton Content="Drugie"
+                             Height="50"
+                             Foreground="LightGray"
+                             FontSize="16"
+                             Style="{StaticResource PrzyciskiMenu}"/>
+                <RadioButton Content="Trzecie"
+                             Height="50"
+                             Foreground="LightGray"
+                             FontSize="16"
+                             Style="{StaticResource PrzyciskiMenu}"/>
+            </StackPanel>
+        </Grid>
+
+        
+    </Border>
 </Window>
