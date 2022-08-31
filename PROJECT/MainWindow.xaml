@@ -56,6 +56,10 @@
                       Grid.Column="1"
                       Style="{StaticResource TextBoxMotyw}" TextChanged="TextBox_TextChanged"/>
 
+            <ContentControl Grid.Row="1"
+                            Grid.Column="1"
+                            Margin="10"/>
+
         </Grid>
 
         

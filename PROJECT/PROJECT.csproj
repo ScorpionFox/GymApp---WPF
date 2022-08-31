@@ -12,8 +12,6 @@
 
   <ItemGroup>
     <Folder Include="MVVM\Model\" />
-    <Folder Include="MVVM\ModelWidoku\" />
-    <Folder Include="MVVM\Widok\" />
     <Folder Include="Zdjęcia\" />
     <Folder Include="Czcionki\" />
   </ItemGroup>
