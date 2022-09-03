@@ -8,11 +8,12 @@
         mc:Ignorable="d"
         Height="600" Width="920"
         ResizeMode="NoResize"
+        WindowStyle="None"
         Background="Transparent"
         AllowsTransparency="True">
 
     <Window.DataContext>
-        <viewModel:MainViewModel/>
+        <viewModel:HomeViewModel/> <!-- MainViewModel -->
     </Window.DataContext>
 
     <Border Background="#151336" CornerRadius="15">
@@ -42,7 +43,7 @@
                              Height="50"
                              Foreground="LightGray"
                              FontSize="16"                           
-                             Style="{StaticResource MenuButtonTheme}"/>
+                             Style="{StaticResource MenuButtonTheme}" Checked="RadioButton_Checked_2"/>
                 <!-- Podpięcie stylu z pliku MenuButtonTheme-->
 
                 <RadioButton Content="Drugie"
@@ -67,10 +68,11 @@
                       Grid.Column="1"
                       Style="{StaticResource ModernTextBox}" TextChanged="TextBox_TextChanged"/>
 
-            <ContentControl Grid.Row="2"
+            <ContentControl Grid.Row="1"
                             Grid.Column="1"
                             Margin="10,4,9,10"
-                            Content="{Binding CurrentView}"/>
+                            Content="{Binding }"/>
+            <!-- CurrentView -->
 
         </Grid>
 
