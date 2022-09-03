@@ -7,7 +7,6 @@
         xmlns:ModelWidoku="clr-namespace:PROJECT.MVVM.ModelWidoku"
         mc:Ignorable="d"
         Height="600" Width="920"
-        WindowStyle= "None"
         ResizeMode="NoResize"
         Background="Transparent"
         AllowsTransparency="True">
@@ -16,12 +15,13 @@
         <ModelWidoku:HomeViewModel></ModelWidoku:HomeViewModel>
     </Window.DataContext>
 
-    <Border Background="#151336" CornerRadius="30">
+    <Border Background="#151336" CornerRadius="15">
 
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="250"/>
-                <ColumnDefinition/>
+                <ColumnDefinition Width="669*"/>
+                <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
             <Grid.RowDefinitions>
@@ -29,42 +29,43 @@
                 <RowDefinition/>
             </Grid.RowDefinitions>
 
+            <!-- Logo -->
             <TextBlock Text="Siłownia"
                        VerticalAlignment="Center"
                        HorizontalAlignment="Center"
                        Foreground="LightGray"
-                       FontSize="25"
-                       Margin="0"/>
+                       FontSize="25"/>
 
+            <!-- Przyciski menu -->
             <StackPanel Grid.Row="1">
                 <RadioButton Content="Pierwsze"
                              Height="50"
                              Foreground="LightGray"
-                             FontSize="16"
-                             Style="{StaticResource PrzyciskiMenu}"/>
+                             FontSize="16"                           
+                             Style="{StaticResource MenuButtonTheme}"/>  <!-- Podpięcie stylu z pliku MenuButtonTheme-->
                 <RadioButton Content="Drugie"
                              Height="50"
                              Foreground="LightGray"
                              FontSize="16"
-                             Style="{StaticResource PrzyciskiMenu}" Checked="RadioButton_Checked"/>
+                             Style="{StaticResource MenuButtonTheme}" Checked="RadioButton_Checked"/> <!-- Podpięcie stylu z pliku MenuButtonTheme-->
                 <RadioButton Content="Trzecie"
                              Height="50"
                              Foreground="LightGray"
                              FontSize="16"
-                             Style="{StaticResource PrzyciskiMenu}" Checked="RadioButton_Checked_1"/>
+                             Style="{StaticResource MenuButtonTheme}" Checked="RadioButton_Checked_1"/> <!-- Podpięcie stylu z pliku MenuButtonTheme-->
             </StackPanel>
 
             <TextBox  Width="250"
                       Height="40"
                       VerticalContentAlignment="Center"
                       HorizontalAlignment="Left"
-                      Margin="5"
+                      Margin="36,20,0,20"
                       Grid.Column="1"
                       Style="{StaticResource TextBoxMotyw}" TextChanged="TextBox_TextChanged"/>
 
             <ContentControl Grid.Row="1"
                             Grid.Column="1"
-                            Margin="10"
+                            Margin="10,10,9,10"
                             Content="{Binding ObecnyWidok}"/>
 
         </Grid>

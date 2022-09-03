@@ -2,16 +2,18 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     <Style BasedOn="{StaticResource {x:Type ToggleButton}}"
            TargetType="{x:Type RadioButton}"
-           x:Key="PrzyciskiMenu">
+           x:Key="MenuButtonTheme">
+        
+        <!-- styl przycisków menu -->
         <Style.Setters>
             <Setter Property="Template">
                 <Setter.Value>
-                    <ControlTemplate TargetType="RadioButton">
+                    <ControlTemplate TargetType="RadioButton"> <!-- Ustawienie aplikowania stylu na RadioButton -->
                         <Grid VerticalAlignment="Stretch"
                               HorizontalAlignment="Stretch"
                               Background="{TemplateBinding Background}">
 
-                            <TextBlock Text="{TemplateBinding Property=Content}"
+                            <TextBlock Text="{TemplateBinding Property=Content}" <!-- Ustawienie wyświetlania zawartości buttona -->
                                        VerticalAlignment="Center"
                                        Margin="50,0,0,0"/>
                         </Grid>
@@ -23,6 +25,7 @@
             <Setter Property="BorderThickness" Value="0"/>
         </Style.Setters>
 
+        <!-- Zmiany stylu zaznaczonego przycisku menu -->
         <Style.Triggers>
             <Trigger Property="IsChecked" Value="True">
                 <Setter Property="Background" Value ="#22202F"/>

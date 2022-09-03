@@ -12,8 +12,8 @@
 
   <ItemGroup>
     <Folder Include="MVVM\Model\" />
-    <Folder Include="Zdjęcia\" />
-    <Folder Include="Czcionki\" />
+    <Folder Include="Images\" />
+    <Folder Include="Fonts\" />
   </ItemGroup>
 
 </Project>
