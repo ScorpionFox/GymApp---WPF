@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PROJECT"
-        xmlns:ModelWidoku="clr-namespace:PROJECT.MVVM.ModelWidoku"
+        xmlns:viewModel="clr-namespace:PROJECT.MVVM.ViewModel"
         mc:Ignorable="d"
         Height="600" Width="920"
         ResizeMode="NoResize"
@@ -12,7 +12,7 @@
         AllowsTransparency="True">
 
     <Window.DataContext>
-        <ModelWidoku:HomeViewModel></ModelWidoku:HomeViewModel>
+        <viewModel:HomeViewModel></viewModel:HomeViewModel>
     </Window.DataContext>
 
     <Border Background="#151336" CornerRadius="15">
@@ -26,7 +26,6 @@
 
             <Grid.RowDefinitions>
                 <RowDefinition Height="80"/>
-                <RowDefinition/>
                 <RowDefinition Height="503*"/>
             </Grid.RowDefinitions>
 
@@ -71,7 +70,7 @@
             <ContentControl Grid.Row="2"
                             Grid.Column="1"
                             Margin="10,4,9,10"
-                            Content="{Binding ObecnyWidok}"/>
+                            Content="{Binding CurrentView}"/>
 
         </Grid>
 

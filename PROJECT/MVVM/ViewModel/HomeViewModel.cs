@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PROJECT.MVVM.ModelWidoku
+namespace PROJECT.MVVM.ViewModel
 {
     class HomeViewModel
     {

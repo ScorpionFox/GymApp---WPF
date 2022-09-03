@@ -7,23 +7,20 @@ using System.Threading.Tasks;
 
 namespace PROJECT.MVVM.MainViewModel
 {
-    class MGW : ObservableObject
+    class MainViewModel : ObservableObject
     {
+        private object _currentView;
 
-        public HomeViewModel HomeVm { get; set; }
-        private object _obecnyWidok;
-            
-        public object ObecnyWidok
+        public object CurrentView
         {
-            get { return _obecnyWidok; }
-            set { _obecnyWidok = value;
-                OnPropertyChanged();
-            }
+            get { return _currentView; }
+            set { _currentView = value; }
         }
-        public MGW() 
-        {
-            HomeVm = new HomeViewModel();
-            ObecnyWidok = HomeVm;
+
+
+        public MainViewModel()
+        { 
+
         }
     }
 }
