@@ -4,12 +4,18 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PROJECT"
+        xmlns:ModelWidoku="clr-namespace:PROJECT.MVVM.ModelWidoku"
         mc:Ignorable="d"
         Height="600" Width="920"
         WindowStyle= "None"
         ResizeMode="NoResize"
         Background="Transparent"
         AllowsTransparency="True">
+
+    <Window.DataContext>
+        <ModelWidoku:HomeViewModel></ModelWidoku:HomeViewModel>
+    </Window.DataContext>
+
     <Border Background="#151336" CornerRadius="30">
 
         <Grid>
@@ -40,12 +46,12 @@
                              Height="50"
                              Foreground="LightGray"
                              FontSize="16"
-                             Style="{StaticResource PrzyciskiMenu}"/>
+                             Style="{StaticResource PrzyciskiMenu}" Checked="RadioButton_Checked"/>
                 <RadioButton Content="Trzecie"
                              Height="50"
                              Foreground="LightGray"
                              FontSize="16"
-                             Style="{StaticResource PrzyciskiMenu}"/>
+                             Style="{StaticResource PrzyciskiMenu}" Checked="RadioButton_Checked_1"/>
             </StackPanel>
 
             <TextBox  Width="250"
@@ -58,10 +64,11 @@
 
             <ContentControl Grid.Row="1"
                             Grid.Column="1"
-                            Margin="10"/>
+                            Margin="10"
+                            Content="{Binding ObecnyWidok}"/>
 
         </Grid>
 
-        
+
     </Border>
 </Window>

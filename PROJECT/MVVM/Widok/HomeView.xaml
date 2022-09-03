@@ -14,7 +14,12 @@
                    Margin="0,0,0,20"/>
 
         <StackPanel Orientation="Horizontal">
-            
+            <Border Width="400"
+                    Height="200"
+                    Background="Orange">
+                
+                
+            </Border>
         </StackPanel>
     </StackPanel>
 </UserControl>

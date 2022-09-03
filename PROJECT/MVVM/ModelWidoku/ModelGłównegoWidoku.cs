@@ -9,9 +9,21 @@ namespace PROJECT.MVVM.ModelWidoku
 {
     class MGW : ObservableObject
     {
-        public MGW() 
-        { 
 
+        public HomeViewModel HomeVm { get; set; }
+        private object _obecnyWidok;
+            
+        public object ObecnyWidok
+        {
+            get { return _obecnyWidok; }
+            set { _obecnyWidok = value;
+                OnPropertyChanged();
+            }
+        }
+        public MGW() 
+        {
+            HomeVm = new HomeViewModel();
+            ObecnyWidok = HomeVm;
         }
     }
 }
