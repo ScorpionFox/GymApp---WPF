@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PROJECT.MVVM.ModelWidoku
+namespace PROJECT.MVVM.MainViewModel
 {
     class MGW : ObservableObject
     {

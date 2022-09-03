@@ -27,6 +27,7 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="80"/>
                 <RowDefinition/>
+                <RowDefinition Height="503*"/>
             </Grid.RowDefinitions>
 
             <!-- Logo -->
@@ -34,38 +35,42 @@
                        VerticalAlignment="Center"
                        HorizontalAlignment="Center"
                        Foreground="LightGray"
-                       FontSize="25"/>
+                       FontSize="25" Height="34" Width="92"/>
 
             <!-- Przyciski menu -->
-            <StackPanel Grid.Row="1">
+            <StackPanel Grid.Row="1" Grid.RowSpan="2">
                 <RadioButton Content="Pierwsze"
                              Height="50"
                              Foreground="LightGray"
                              FontSize="16"                           
-                             Style="{StaticResource MenuButtonTheme}"/>  <!-- Podpięcie stylu z pliku MenuButtonTheme-->
+                             Style="{StaticResource MenuButtonTheme}"/>
+                <!-- Podpięcie stylu z pliku MenuButtonTheme-->
+
                 <RadioButton Content="Drugie"
                              Height="50"
                              Foreground="LightGray"
                              FontSize="16"
-                             Style="{StaticResource MenuButtonTheme}" Checked="RadioButton_Checked"/> <!-- Podpięcie stylu z pliku MenuButtonTheme-->
+                             Style="{StaticResource MenuButtonTheme}" Checked="RadioButton_Checked"/>
+                <!-- Podpięcie stylu z pliku MenuButtonTheme-->
+
                 <RadioButton Content="Trzecie"
                              Height="50"
                              Foreground="LightGray"
                              FontSize="16"
-                             Style="{StaticResource MenuButtonTheme}" Checked="RadioButton_Checked_1"/> <!-- Podpięcie stylu z pliku MenuButtonTheme-->
+                             Style="{StaticResource MenuButtonTheme}" Checked="RadioButton_Checked_1"/>
+                <!-- Podpięcie stylu z pliku MenuButtonTheme-->
             </StackPanel>
 
             <TextBox  Width="250"
-                      Height="40"
                       VerticalContentAlignment="Center"
                       HorizontalAlignment="Left"
                       Margin="36,20,0,20"
                       Grid.Column="1"
-                      Style="{StaticResource TextBoxMotyw}" TextChanged="TextBox_TextChanged"/>
+                      Style="{StaticResource ModernTextBox}" TextChanged="TextBox_TextChanged"/>
 
-            <ContentControl Grid.Row="1"
+            <ContentControl Grid.Row="2"
                             Grid.Column="1"
-                            Margin="10,10,9,10"
+                            Margin="10,4,9,10"
                             Content="{Binding ObecnyWidok}"/>
 
         </Grid>
