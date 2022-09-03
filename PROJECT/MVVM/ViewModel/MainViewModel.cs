@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PROJECT.MVVM.MainViewModel
+namespace PROJECT.MVVM.ViewModel
 {
     class MainViewModel : ObservableObject
     {
