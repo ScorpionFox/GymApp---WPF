@@ -13,9 +13,13 @@ namespace PROJECT.MVVM.ViewModel
 
         public RelayCommand DiscoveryViewCommand { get; set; }
 
+        public RelayCommand TrainViewCommand { get; set; }
+
         public HomeViewModel HomeVM { get; set; }
 
         public DiscoveryViewModel DiscoveryVM { get; set; }
+
+        public TrainViewModel TrainVM { get; set; }
 
         private object _currentView;
 
@@ -33,6 +37,7 @@ namespace PROJECT.MVVM.ViewModel
         {
             HomeVM = new HomeViewModel();
             DiscoveryVM = new DiscoveryViewModel();
+            TrainVM = new TrainViewModel();
             CurrentView = HomeVM;
 
             HomeViewCommand = new RelayCommand(o =>
@@ -43,6 +48,11 @@ namespace PROJECT.MVVM.ViewModel
             DiscoveryViewCommand = new RelayCommand(o =>
             {
                 CurrentView = DiscoveryVM;
+            });
+
+            TrainViewCommand = new RelayCommand(o =>
+            {
+                CurrentView = TrainVM;
             });
         }
     }

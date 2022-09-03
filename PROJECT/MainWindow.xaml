@@ -60,7 +60,8 @@
                              Height="50"
                              Foreground="LightGray"
                              FontSize="16"
-                             Style="{StaticResource MenuButtonTheme}" Checked="RadioButton_Checked_1"/>
+                             Style="{StaticResource MenuButtonTheme}" Checked="RadioButton_Checked_1"
+                             Command="{Binding TrainViewCommand}"/>
                 <!-- Podpięcie stylu z pliku MenuButtonTheme-->
             </StackPanel>
 
