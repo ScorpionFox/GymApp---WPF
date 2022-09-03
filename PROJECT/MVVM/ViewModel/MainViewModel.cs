@@ -1,10 +1,5 @@
 ﻿using PROJECT.Core;
 using PROJECT.MVVM.ViewModel;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PROJECT.MVVM.MainViewModel
 {
@@ -17,9 +12,10 @@ namespace PROJECT.MVVM.MainViewModel
         public object CurrentView
         {
             get { return _currentView; }
-            set { _currentView = value;
+            set {
+                _currentView = value;
                 OnPropertyChanged();
-            }
+                }
         }
 
 

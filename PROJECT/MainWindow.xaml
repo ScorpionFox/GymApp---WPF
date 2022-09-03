@@ -12,7 +12,7 @@
         AllowsTransparency="True">
 
     <Window.DataContext>
-        <local:MainWindow></local:MainWindow>
+        <viewModel:MainViewModel/>
     </Window.DataContext>
 
     <Border Background="#151336" CornerRadius="15">
