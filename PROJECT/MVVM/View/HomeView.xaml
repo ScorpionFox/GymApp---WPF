@@ -14,6 +14,7 @@
         <TextBox HorizontalAlignment="Left" Margin="140,188,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBox HorizontalAlignment="Left" Margin="140,243,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBox HorizontalAlignment="Left" Margin="140,279,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="151,320,0,0" VerticalAlignment="Top" Height="62" Width="98"/>
 
     </Grid>
 
