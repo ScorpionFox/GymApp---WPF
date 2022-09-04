@@ -6,9 +6,13 @@
              xmlns:local="clr-namespace:PROJECT.MVVM.View"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800"
-             Background="#1F1bFF">
+             >
     <Grid>
-        <TextBox HorizontalAlignment="Left" Margin="203,79,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Margin="146,115,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="132" Height="39"/>
+        <TextBox HorizontalAlignment="Left" Margin="146,186,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="132" Height="39"/>
+        <TextBox HorizontalAlignment="Left" Margin="146,251,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="132" Height="39"/>
+        <ComboBox HorizontalAlignment="Left" Margin="146,48,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBox_SelectionChanged"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="176,320,0,0" VerticalAlignment="Top" Height="40" Width="72"/>
 
     </Grid>
 </UserControl>
