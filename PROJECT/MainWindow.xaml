@@ -75,6 +75,7 @@
             <ContentControl Grid.Row="1"
                             Margin="10,4,0,10"
                             Content="{Binding CurrentView}"/>
+            <DataGrid Grid.Column="1" Grid.Row="1" Margin="5,2,5,8"/>
             <!-- CurrentView -->
 
         </Grid>
