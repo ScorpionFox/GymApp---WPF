@@ -6,23 +6,24 @@
         xmlns:local="clr-namespace:PROJECT"
         xmlns:viewModel="clr-namespace:PROJECT.MVVM.ViewModel"
         mc:Ignorable="d"
-        Height="600" Width="920"
+        Height="600" Width="1220"
         ResizeMode="NoResize"
         WindowStyle="None"
         Background="Transparent"
         AllowsTransparency="True">
 
     <Window.DataContext>
-        <viewModel:MainViewModel/> <!-- MainViewModel -->
+        <viewModel:MainViewModel/>
+        <!-- MainViewModel -->
     </Window.DataContext>
 
     <Border Background="#151336" CornerRadius="15">
 
         <Grid>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="250"/>
-                <ColumnDefinition Width="669*"/>
-                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="731"/>
+                <ColumnDefinition Width="487*"/>
+                <ColumnDefinition Width="2*"/>
             </Grid.ColumnDefinitions>
 
             <Grid.RowDefinitions>
@@ -33,48 +34,46 @@
             <!-- Logo -->
             <TextBlock Text="Siłownia"
                        VerticalAlignment="Center"
-                       HorizontalAlignment="Center"
+                       HorizontalAlignment="Left"
                        Foreground="LightGray"
-                       FontSize="25" Height="34" Width="92"/>
+                       FontSize="25" Height="34" Width="92" Margin="66,0,0,0"/>
 
             <!-- Przyciski menu -->
-            <StackPanel Grid.Row="1" Grid.RowSpan="2">
+            <StackPanel Margin="510,7,228,17" Orientation="Horizontal" Grid.ColumnSpan="2">
                 <RadioButton Content="Pierwsze"
                              Height="50"
                              Foreground="LightGray"
                              FontSize="16"                           
                              Style="{StaticResource MenuButtonTheme}" Checked="RadioButton_Checked_2"
                              IsChecked="True"
-                             Command="{Binding HomeViewCommand}"/>
+                             Command="{Binding HomeViewCommand}" Width="160"/>
                 <!-- Podpięcie stylu z pliku MenuButtonTheme-->
 
                 <RadioButton Content="Drugie"
                              Height="50"
                              Foreground="LightGray"
                              FontSize="16"
+                             Margin="0,0,0,0"
                              Style="{StaticResource MenuButtonTheme}" Checked="RadioButton_Checked"
-                             Command="{Binding DiscoveryViewCommand}"/>
-                <!-- Podpięcie stylu z pliku MenuButtonTheme-->
-
+                             Command="{Binding DiscoveryViewCommand}" Width="160"/>
                 <RadioButton Content="Trzecie"
                              Height="50"
                              Foreground="LightGray"
                              FontSize="16"
                              Style="{StaticResource MenuButtonTheme}" Checked="RadioButton_Checked_1"
-                             Command="{Binding TrainViewCommand}"/>
+                             Command="{Binding TrainViewCommand}" Width="160"/>
+                <!-- Podpięcie stylu z pliku MenuButtonTheme-->
                 <!-- Podpięcie stylu z pliku MenuButtonTheme-->
             </StackPanel>
 
             <TextBox  Width="250"
                       VerticalContentAlignment="Center"
-                      HorizontalAlignment="Left"
-                      Margin="36,20,0,20"
-                      Grid.Column="1"
-                      Style="{StaticResource ModernTextBox}" TextChanged="TextBox_TextChanged"/>
+                      HorizontalAlignment="Center"
+                      Margin="0,23,0,17"
+                      Style="{StaticResource ModernTextBox}" TextChanged="TextBox_TextChanged" Grid.Column="2"/>
 
             <ContentControl Grid.Row="1"
-                            Grid.Column="1"
-                            Margin="10,4,9,10"
+                            Margin="10,4,0,10"
                             Content="{Binding CurrentView}"/>
             <!-- CurrentView -->
 

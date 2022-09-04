@@ -8,6 +8,7 @@
              d:DesignHeight="450" d:DesignWidth="800"
              Background="#1F1bFF">
     <Grid>
-            
+        <TextBox HorizontalAlignment="Left" Margin="203,79,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+
     </Grid>
 </UserControl>

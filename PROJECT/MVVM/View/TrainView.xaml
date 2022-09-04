@@ -8,6 +8,7 @@
              d:DesignHeight="450" d:DesignWidth="800"
              Background="Yellow">
     <Grid>
-            
+        <DataGrid Margin="54,49,54,71"/>
+
     </Grid>
 </UserControl>
