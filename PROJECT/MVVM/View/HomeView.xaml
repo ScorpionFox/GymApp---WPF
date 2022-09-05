@@ -10,17 +10,18 @@
 
     <Border CornerRadius="50" Background="LightCoral">
         <Grid>
-            <StackPanel Margin="0,0,560,0">
+            <StackPanel Margin="10,0,501,0">
                 <TextBox HorizontalAlignment="Center" Margin="10,30,0,0" Text="Imię" TextWrapping="Wrap" Width="231" Style="{StaticResource ModernTextBox}"/>
                 <TextBox HorizontalAlignment="Center" Margin="10,30,0,0" Text="Nazwisko" TextWrapping="Wrap" Width="231" Style="{StaticResource ModernTextBox}"/>
                 <TextBox HorizontalAlignment="Center" Margin="10,30,0,0" Text="Pesel" TextWrapping="Wrap" Width="231" Style="{StaticResource ModernTextBox}"/>
+                <Button Content="Wykonaj" Height="58" Width="190" Margin="10,30,0,0"/>
             </StackPanel>
-            <StackPanel Margin="256,0,306,0">
-                <ComboBox Width="231" Height="35" HorizontalAlignment="Left" Margin="10,30,0,0" />
-                <TextBox HorizontalAlignment="Center" Margin="10,30,0,0" Text="Data Zakupu" TextWrapping="Wrap" Width="231" Style="{StaticResource ModernTextBox}"/>
+            <StackPanel Margin="300,0,195,0">
+                <ComboBox Width="231" Height="35" Margin="10,30,0,0"/>
+                <TextBox HorizontalAlignment="Center" Margin="10,60,0,0" Text="Data Zakupu" TextWrapping="Wrap" Width="231" Style="{StaticResource ModernTextBox}"/>
                 <TextBox HorizontalAlignment="Center" Margin="10,30,0,0" Text="Ważny do ..." TextWrapping="Wrap" Width="231" Style="{StaticResource ModernTextBox}"/>
             </StackPanel>
-            <Button Content="Wykonaj" Height="58" Width="190" Margin="160,324,450,68"/>
+            
         </Grid>
     </Border>
 
