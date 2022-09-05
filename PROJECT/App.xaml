@@ -12,6 +12,8 @@
                 <ResourceDictionary Source="Theme/MenuButtonTheme.xaml"/>
                 <!-- Podpięcie stylu TextBoxu -->
                 <ResourceDictionary Source="Theme/TextBoxTheme.xaml"/>
+
+                <ResourceDictionary Source="Theme/ButtonTheme.xaml"/>
             </ResourceDictionary.MergedDictionaries>
 
             <DataTemplate DataType="{x:Type viewModel:HomeViewModel}">
