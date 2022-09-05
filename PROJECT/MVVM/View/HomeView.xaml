@@ -10,16 +10,18 @@
 
     <Border CornerRadius="50" Background="LightCoral">
         <Grid>
-        <StackPanel Margin="51,0,561,0">
-            <ComboBox HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="120"/>
-            <TextBox HorizontalAlignment="Left" Margin="10,10,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-            <TextBox HorizontalAlignment="Left" Margin="10,10,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-            <TextBox HorizontalAlignment="Left" Margin="10,10,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-            <TextBox HorizontalAlignment="Left" Margin="10,10,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-            <TextBox HorizontalAlignment="Left" Margin="10,10,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-            <Button Content="Button" HorizontalAlignment="Left" Margin="20,15,0,0" VerticalAlignment="Top" Height="62" Width="98"/>
-        </StackPanel>
-    </Grid>
+            <StackPanel Margin="0,0,560,0">
+                <TextBox HorizontalAlignment="Center" Margin="10,30,0,0" Text="Imię" TextWrapping="Wrap" Width="231" Style="{StaticResource ModernTextBox}"/>
+                <TextBox HorizontalAlignment="Center" Margin="10,30,0,0" Text="Nazwisko" TextWrapping="Wrap" Width="231" Style="{StaticResource ModernTextBox}"/>
+                <TextBox HorizontalAlignment="Center" Margin="10,30,0,0" Text="Pesel" TextWrapping="Wrap" Width="231" Style="{StaticResource ModernTextBox}"/>
+            </StackPanel>
+            <StackPanel Margin="256,0,306,0">
+                <ComboBox Width="231" Height="35" HorizontalAlignment="Left" Margin="10,30,0,0" />
+                <TextBox HorizontalAlignment="Center" Margin="10,30,0,0" Text="Data Zakupu" TextWrapping="Wrap" Width="231" Style="{StaticResource ModernTextBox}"/>
+                <TextBox HorizontalAlignment="Center" Margin="10,30,0,0" Text="Ważny do ..." TextWrapping="Wrap" Width="231" Style="{StaticResource ModernTextBox}"/>
+            </StackPanel>
+            <Button Content="Wykonaj" Height="58" Width="190" Margin="160,324,450,68"/>
+        </Grid>
     </Border>
 
     <!--

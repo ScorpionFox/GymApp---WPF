@@ -9,12 +9,12 @@
              >
     <Border CornerRadius="50"  Background="LightGreen">
         <Grid>
-            <StackPanel Margin="44,0,562,0">
-                <ComboBox Width="120" SelectionChanged="ComboBox_SelectionChanged" HorizontalAlignment="Left" Margin="10,10,0,0"/>
-                <TextBox HorizontalAlignment="Left" Margin="10,10,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="132" Height="39"/>
-                <TextBox HorizontalAlignment="Left" Margin="10,10,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="132" Height="39"/>
-                <TextBox HorizontalAlignment="Left" Margin="10,10,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="132" Height="39"/>
-                <Button Content="Button" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="40" Width="72"/>
+            <StackPanel Margin="0,0,420,0">
+                <ComboBox Width="231" Height="35" HorizontalAlignment="Center" Margin="10,10,0,0" />
+                <TextBox HorizontalAlignment="Center" Margin="10,15,0,0" Text="Imię" TextWrapping="Wrap" Width="231" Style="{StaticResource ModernTextBox}"/>
+                <TextBox HorizontalAlignment="Center" Margin="10,15,0,0" Text="Nazwisko" TextWrapping="Wrap" Width="231" Style="{StaticResource ModernTextBox}"/>
+                <TextBox HorizontalAlignment="Center" Margin="10,15,0,0" Text="Pesel" TextWrapping="Wrap" Width="231" Style="{StaticResource ModernTextBox}"/>
+                <Button Content="Wykonaj" Height="58" Width="190" HorizontalAlignment="Center" Margin="10,30,0,0" />
             </StackPanel>
         </Grid>
     </Border>
