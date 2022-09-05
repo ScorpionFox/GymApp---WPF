@@ -13,5 +13,6 @@
         <TextBox HorizontalAlignment="Left" Margin="166,140,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBox HorizontalAlignment="Left" Margin="166,180,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Button Content="Button" HorizontalAlignment="Left" Margin="185,225,0,0" VerticalAlignment="Top" Height="58" Width="82"/>
+        <Image Margin="322,48,10,82" Stretch="Fill" Source="pack://siteoforigin:,,,/Mięśnie brzucha.jpg"/>
     </Grid>
 </UserControl>
