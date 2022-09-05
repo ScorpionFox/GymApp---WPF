@@ -10,7 +10,10 @@
     <Border CornerRadius="50"  Background="LightGreen">
         <Grid>
             <StackPanel Margin="0,0,420,0">
-                <ComboBox Width="231" Height="35" HorizontalAlignment="Center" Margin="10,10,0,0" />
+                <ComboBox Width="231" Height="35" HorizontalAlignment="Center" Margin="10,10,0,0">
+                    <ComboBoxItem IsSelected="True">Dodaj</ComboBoxItem>
+                    <ComboBoxItem>Usuń</ComboBoxItem>
+                </ComboBox>
                 <TextBox HorizontalAlignment="Center" Margin="10,15,0,0" Text="Imię" TextWrapping="Wrap" Width="231" Style="{StaticResource ModernTextBox}"/>
                 <TextBox HorizontalAlignment="Center" Margin="10,15,0,0" Text="Nazwisko" TextWrapping="Wrap" Width="231" Style="{StaticResource ModernTextBox}"/>
                 <TextBox HorizontalAlignment="Center" Margin="10,15,0,0" Text="Pesel" TextWrapping="Wrap" Width="231" Style="{StaticResource ModernTextBox}"/>
