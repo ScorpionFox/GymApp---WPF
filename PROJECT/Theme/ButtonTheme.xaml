@@ -17,6 +17,13 @@
                                       Margin="0"/>
                         </Grid>
                     </Border>
+
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="BlanchedAlmond"/>
+                            <Setter Property="Foreground" Value="White"
+                        </Trigger>
+                    </ControlTemplate.Triggers>
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
