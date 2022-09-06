@@ -9,7 +9,7 @@
              >
     <Border CornerRadius="50"  Background="LightGreen">
         <Grid>
-            <StackPanel Margin="-217,0,637,0">
+            <StackPanel Margin="-75,15,866,0">
                 <ComboBox Width="231" Height="35" HorizontalAlignment="Center" Margin="10,10,0,0" SelectionChanged="ComboBox_SelectionChanged_1">
                     <ComboBox.Background>
                         <LinearGradientBrush EndPoint="0,1">
@@ -25,7 +25,7 @@
                 <TextBox HorizontalAlignment="Center" Margin="10,15,0,0" Text="Pesel" TextWrapping="Wrap" Width="231" Style="{StaticResource ModernTextBox}"/>
                 <Button Content="Wykonaj" Height="58" Width="190" HorizontalAlignment="Center" Margin="10,30,0,0" />
             </StackPanel>
-            <DataGrid Margin="624,24,37,24"/>
+            <DataGrid Margin="624,24,37,24" x:Name="DataGrid" />
         </Grid>
     </Border>
 </UserControl>

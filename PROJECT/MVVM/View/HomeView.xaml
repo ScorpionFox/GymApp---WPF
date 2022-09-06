@@ -10,21 +10,21 @@
 
     <Border CornerRadius="50" Background="LightCoral">
         <Grid>
-            <StackPanel Margin="-197,0,708,0" VerticalAlignment="Center">
-                <TextBox HorizontalAlignment="Center" Margin="10,0,0,0" Text="Imię" TextWrapping="Wrap" Width="231" Style="{StaticResource ModernTextBox}"/>
-                <TextBox HorizontalAlignment="Center" Margin="10,30,0,0" Text="Nazwisko" TextWrapping="Wrap" Width="231" Style="{StaticResource ModernTextBox}"/>
-                <TextBox HorizontalAlignment="Center" Margin="10,30,0,0" Text="Pesel" TextWrapping="Wrap" Width="231" Style="{StaticResource ModernTextBox}"/>
-                <Button Content="Wykonaj" Height="58" Width="190" Margin="10,30,0,0"/>
+            <StackPanel Margin="-75,0,866,0" VerticalAlignment="Center">
+             
+                <TextBox HorizontalAlignment="Center" Margin="10,30,0,0"  TextWrapping="Wrap" Width="231" Style="{StaticResource ModernTextBox}" x:Name="Pesel" />
+                <Button Content="Wykonaj" Height="58" Width="190" Margin="10,30,0,0" Click="Button_Click"/>
             </StackPanel>
-            <StackPanel Margin="299,61,160,0" VerticalAlignment="Top">
+            <StackPanel Margin="299,61,605,0" VerticalAlignment="Top" Height="355">
                 <ComboBox Width="231" Height="35" Margin="10,0,0,0" HorizontalAlignment="Left">
                     <ComboBoxItem IsSelected="True">Sprawdź Ważność</ComboBoxItem>
                     <ComboBoxItem>Uaktualnij</ComboBoxItem>
                 </ComboBox>
                 <TextBox HorizontalAlignment="Left" Margin="10,60,0,0" Text="Data Zakupu" TextWrapping="Wrap" Width="231" Style="{StaticResource ModernTextBox}"/>
                 <TextBox HorizontalAlignment="Left" Margin="10,30,0,0" Text="Ważny do ..." TextWrapping="Wrap" Width="231" Style="{StaticResource ModernTextBox}"/>
+                <Button Content="Uaktualnij" Height="58" Width="189" Margin="10,30,0,0"/>
             </StackPanel>
-            <DataGrid Margin="624,24,37,24"/>
+            <DataGrid Margin="624,24,37,24" x:Name="DataGrid" />
 
         </Grid>
     </Border>

@@ -14,7 +14,7 @@
                         <Grid>
                             <Rectangle StrokeThickness="1"/>
                             <TextBox Margin="1"
-                                     Text="{TemplateBinding Text}"
+                                   
                                      BorderThickness="0"
                                      Background="Transparent"
                                      VerticalContentAlignment="Center"
@@ -23,8 +23,7 @@
                                      x:Name="SearchBox"
                                      FontSize="30"/>
 
-                            <TextBlock IsHitTestVisible="False"
-                                       Text="Szukaj"
+                            <TextBlock IsHitTestVisible="False"                                     
                                        VerticalAlignment="Center"
                                        HorizontalAlignment="Left"
                                        Margin="10,0,0,0"
