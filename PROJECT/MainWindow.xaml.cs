@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using PROJECT.Entities;
 
 namespace PROJECT
 {
@@ -23,6 +24,7 @@ namespace PROJECT
         public MainWindow()
         {
             InitializeComponent();
+            test();
         }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
@@ -43,6 +45,16 @@ namespace PROJECT
         private void RadioButton_Checked_2(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void test()
+        {
+            using (var db = new MyDbContext())
+            {
+                var query = (from T in db.Trenerzy select T).ToList();
+             //  DataGrid.ItemsSource = query;
+
+            }
         }
     }
 }

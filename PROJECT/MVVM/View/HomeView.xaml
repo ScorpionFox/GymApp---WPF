@@ -5,12 +5,12 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:PROJECT.MVVM.View"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800"
+             d:DesignHeight="450" d:DesignWidth="1210" Margin="0,0,10,0"
              >
 
     <Border CornerRadius="50" Background="LightCoral">
         <Grid>
-            <StackPanel Margin="10,0,501,0" VerticalAlignment="Center">
+            <StackPanel Margin="-197,0,708,0" VerticalAlignment="Center">
                 <TextBox HorizontalAlignment="Center" Margin="10,0,0,0" Text="Imię" TextWrapping="Wrap" Width="231" Style="{StaticResource ModernTextBox}"/>
                 <TextBox HorizontalAlignment="Center" Margin="10,30,0,0" Text="Nazwisko" TextWrapping="Wrap" Width="231" Style="{StaticResource ModernTextBox}"/>
                 <TextBox HorizontalAlignment="Center" Margin="10,30,0,0" Text="Pesel" TextWrapping="Wrap" Width="231" Style="{StaticResource ModernTextBox}"/>
@@ -24,6 +24,7 @@
                 <TextBox HorizontalAlignment="Left" Margin="10,60,0,0" Text="Data Zakupu" TextWrapping="Wrap" Width="231" Style="{StaticResource ModernTextBox}"/>
                 <TextBox HorizontalAlignment="Left" Margin="10,30,0,0" Text="Ważny do ..." TextWrapping="Wrap" Width="231" Style="{StaticResource ModernTextBox}"/>
             </StackPanel>
+            <DataGrid Margin="624,24,37,24"/>
 
         </Grid>
     </Border>

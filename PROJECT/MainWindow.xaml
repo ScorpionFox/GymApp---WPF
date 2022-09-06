@@ -21,9 +21,9 @@
 
         <Grid>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="731"/>
-                <ColumnDefinition Width="487*"/>
-                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="1218"/>
+                <ColumnDefinition Width="0*"/>
+                <ColumnDefinition/>
             </Grid.ColumnDefinitions>
 
             <Grid.RowDefinitions>
@@ -39,7 +39,7 @@
                        FontSize="25" Height="34" Width="92" Margin="66,0,0,0"/>
 
             <!-- Przyciski menu -->
-            <StackPanel Margin="510,7,228,17" Orientation="Horizontal" Grid.ColumnSpan="2">
+            <StackPanel Margin="510,7,48,17" Orientation="Horizontal">
                 <RadioButton Content="Pierwsze"
                              Height="50"
                              Foreground="LightGray"
@@ -75,7 +75,6 @@
             <ContentControl Grid.Row="1"
                             Margin="10,4,0,10"
                             Content="{Binding CurrentView}"/>
-            <DataGrid Grid.Column="1" Grid.Row="1" Margin="5,2,5,8"/>
             <!-- CurrentView -->
 
         </Grid>
