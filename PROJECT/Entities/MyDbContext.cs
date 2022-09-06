@@ -16,5 +16,11 @@ namespace PROJECT.Entities
         public DbSet<Rabaty> Rabaty { get; set; }
         public DbSet<Trenerzy> Trenerzy { get; set; }
         public DbSet<Typy_Karnetu> Typy_Karnetu { get; set; }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseSqlServer(baza);
+        }
     }
 }
+
