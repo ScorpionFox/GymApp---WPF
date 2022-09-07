@@ -29,7 +29,7 @@ namespace PROJECT.MVVM.View
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Debug.WriteLine(Pesel.Text);
+            //Debug.WriteLine(Pesel.Text);
             //int P = int.Parse(Pesel.Text.ToString());
             test(207);
         }

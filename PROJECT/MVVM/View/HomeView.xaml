@@ -10,21 +10,23 @@
 
     <Border CornerRadius="50" Background="LightCoral">
         <Grid>
-            <StackPanel Margin="-75,0,866,0" VerticalAlignment="Center">
-             
-                <TextBox HorizontalAlignment="Center" Margin="10,30,0,0"  TextWrapping="Wrap" Width="231" Style="{StaticResource ModernTextBox}" x:Name="Pesel" />
-                <Button Content="Wykonaj" Height="58" Width="190" Margin="10,30,0,0" Click="Button_Click"/>
+            <StackPanel Margin="10,0,902,0" VerticalAlignment="Center" Height="450">
+
+                <TextBox x:Name="Idk" HorizontalAlignment="Center" Margin="10,30,0,0"  TextWrapping="Wrap" Width="231" Style="{StaticResource ModernTextBox}"/>
+                <TextBox x:Name="ImieK" HorizontalAlignment="Center" Margin="10,5,0,0"  TextWrapping="Wrap" Width="231" Style="{StaticResource ModernTextBox}"/>
+                <TextBox x:Name="NazwiskoK" HorizontalAlignment="Center" Margin="10,5,0,0"  TextWrapping="Wrap" Width="231" Style="{StaticResource ModernTextBox}"/>
+                <TextBox x:Name="IdTrener" HorizontalAlignment="Center" Margin="10,5,0,0"  TextWrapping="Wrap" Width="231" Style="{StaticResource ModernTextBox}"/>
+                <TextBox x:Name="IdRabat" HorizontalAlignment="Center" Margin="10,5,0,0"  TextWrapping="Wrap" Width="231" Style="{StaticResource ModernTextBox}"/>
+                <TextBox x:Name="IdKarnet" HorizontalAlignment="Center" Margin="10,5,0,0"  TextWrapping="Wrap" Width="231" Style="{StaticResource ModernTextBox}"/>
             </StackPanel>
-            <StackPanel Margin="299,61,605,0" VerticalAlignment="Top" Height="355">
-                <ComboBox Width="231" Height="35" Margin="10,0,0,0" HorizontalAlignment="Left">
-                    <ComboBoxItem IsSelected="True">Sprawdź Ważność</ComboBoxItem>
-                    <ComboBoxItem>Uaktualnij</ComboBoxItem>
-                </ComboBox>
-                <TextBox HorizontalAlignment="Left" Margin="10,60,0,0" Text="Data Zakupu" TextWrapping="Wrap" Width="231" Style="{StaticResource ModernTextBox}"/>
-                <TextBox HorizontalAlignment="Left" Margin="10,30,0,0" Text="Ważny do ..." TextWrapping="Wrap" Width="231" Style="{StaticResource ModernTextBox}"/>
-                <Button Content="Uaktualnij" Height="58" Width="189" Margin="10,30,0,0"/>
+            <Button Content="Wykonaj" Height="58" Width="190" Click="Button_Click" Margin="292,196,728,196"/>
+            <StackPanel Margin="644,0,10,0" VerticalAlignment="Center" Height="450">
+                <TextBox x:Name="Idt" HorizontalAlignment="Center" Margin="10,30,0,0"  TextWrapping="Wrap" Width="231" Style="{StaticResource ModernTextBox}"/>
+                <TextBox x:Name="ImieT" HorizontalAlignment="Center" Margin="10,5,0,0" Text="Data Zakupu" TextWrapping="Wrap" Width="231" Style="{StaticResource ModernTextBox}"/>
+                <TextBox x:Name="NazwiskoT" HorizontalAlignment="Center" Margin="10,10,0,0"  TextWrapping="Wrap" Width="232" Style="{StaticResource ModernTextBox}"/>
+                <TextBox x:Name="Specjalizacja" HorizontalAlignment="Center" Margin="10,10,0,0" Text="Ważny do ..." TextWrapping="Wrap" Width="231" Style="{StaticResource ModernTextBox}"/>
+                <Button Content="Wykonaj" Height="58" Width="189" Margin="10,10,0,0"/>
             </StackPanel>
-            <DataGrid Margin="624,24,37,24" x:Name="DataGrid" />
 
         </Grid>
     </Border>
