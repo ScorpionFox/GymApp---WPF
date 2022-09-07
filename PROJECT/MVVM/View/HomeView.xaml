@@ -18,9 +18,9 @@
                 <TextBox x:Name="IdTrener" HorizontalAlignment="Center" Margin="10,5,0,0"  TextWrapping="Wrap" Width="231" />
                 <TextBox x:Name="IdRabat" HorizontalAlignment="Center" Margin="10,5,0,0"  TextWrapping="Wrap" Width="231" />
                 <TextBox x:Name="IdKarnet" HorizontalAlignment="Center" Margin="10,5,0,0"  TextWrapping="Wrap" Width="231"/>
-                <TextBlock x:Name="Komunikat" Background="Yellow"> </TextBlock>
+                <TextBlock x:Name="Komunikat" Background="Yellow" Width="231" Margin="10,5,0,0"> </TextBlock>
             </StackPanel>
-            <Button Content="Wykonaj" Height="58" Width="190" Click="Button_Click" Margin="292,196,728,196"/>
+            <Button Content="Wykonaj" Height="58" Width="190" Click="Button_Click" Margin="64,184,956,208"/>
             <StackPanel Margin="644,0,10,0" VerticalAlignment="Center" Height="450">
                 <TextBox x:Name="Idt" HorizontalAlignment="Center" Margin="10,30,0,0"  TextWrapping="Wrap" Width="231"/>
                 <TextBox x:Name="ImieT" HorizontalAlignment="Center" Margin="10,5,0,0" Text="Data Zakupu" TextWrapping="Wrap" Width="231" />

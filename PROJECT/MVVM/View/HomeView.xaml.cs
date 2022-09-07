@@ -36,7 +36,7 @@ namespace PROJECT.MVVM.View
                 {
                     Klienci Klient = new Klienci();
                     // int last = db.Klienci.Count
-                    Klient.Id = db.Klienci.Count() + 1;
+                    Klient.Id = db.Klienci.Max() + 1;
                     Klient.Imie = ImieK.Text;
                     Klient.Nazwisko = NazwiskoK.Text;
                     Klient.IdTrener = int.Parse(IdTrener.Text);
@@ -57,7 +57,29 @@ namespace PROJECT.MVVM.View
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
+        //    try
+        //    {
+        //        using (var db = new MyDbContext())
+        //        {
+        //            Klienci Klient = new Klienci();
+        //            // int last = db.Klienci.Count
+        //            Klient.Id = db.Klienci.Count() + 1;
+        //            Klient.Imie = ImieK.Text;
+        //            Klient.Nazwisko = NazwiskoK.Text;
+        //            Klient.IdTrener = int.Parse(IdTrener.Text);
+        //            Klient.IdRabat = int.Parse(IdRabat.Text);
+        //            Klient.IdKarnet = int.Parse(IdKarnet.Text);
 
-        }
+        //            db.Klienci.Add(Klient);
+        //            db.SaveChanges();
+        //            Komunikat.Text = "Dodano Pomyślnie";
+        //        }
+        //    }
+        //    catch
+        //    {
+        //        Komunikat.Text = "Wystąpił błąd";
+        //    }
+        //}
+    }
     }
 }

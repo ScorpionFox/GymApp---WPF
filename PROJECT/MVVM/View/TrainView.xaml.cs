@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using PROJECT.Entities;
+using System.Diagnostics;
 
 namespace PROJECT.MVVM.View
 {
@@ -24,5 +26,46 @@ namespace PROJECT.MVVM.View
         {
             InitializeComponent();
         }
-    }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            int Tabela = Combo2.SelectedIndex;
+            int index = int.Parse(Id.Text);
+
+            using (var db = new MyDbContext())
+            {
+                switch (Tabela)
+                {
+                    case 0:
+                        Trenerzy Trener = new Trenerzy() { Id = index };
+                        db.Trenerzy.Attach(Trener);
+                        db.Trenerzy.Remove(Trener);
+                        db.SaveChanges();
+                        break;
+                    case 1:
+                        Klienci Klient = new Klienci() { Id = index };
+                        db.Klienci.Attach(Klient);
+                        db.Klienci.Remove(Klient);
+                        db.SaveChanges();
+                        break;
+                    case 2:
+                        Rabat Rabat = new Rabat() { Id = index };
+                        db.Rabat.Attach(Rabat);
+                        db.Rabat.Remove(Rabat);
+                        db.SaveChanges();
+                        break;
+                    case 3:
+                        Karnet Karnet = new Karnet() { Id = index };
+                        db.Karnet.Attach(Karnet);
+                        db.Karnet.Remove(Karnet);
+                        db.SaveChanges();
+                        break;
+                    default:
+                        throw new Exception();
+                        break;
+                }
+
+            }
+        }
+    }   
 }
