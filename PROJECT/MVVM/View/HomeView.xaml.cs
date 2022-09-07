@@ -25,26 +25,39 @@ namespace PROJECT.MVVM.View
         public HomeView()
         {
             InitializeComponent();
+            Komunikat.Text = "";
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            //Debug.WriteLine(Pesel.Text);
-            //int P = int.Parse(Pesel.Text.ToString());
-            test(207);
-        }
-
-        private void test(int Pesel)
-        {
-            using (var db = new MyDbContext())
+            try
             {
-                //var query = //(from T in db.Klienci
-                          //   join K in db.Karnet on T.Pesel equals K.ID_Klient
-                           //  where T.Pesel == Pesel
-                           //  select new { Name = T.Imie, Surname = T.Nazwisko, Date = K.Data_waznosci }).ToList();
-              //    DataGrid.ItemsSource = query;
+                using (var db = new MyDbContext())
+                {
+                    Klienci Klient = new Klienci();
+                    // int last = db.Klienci.Count
+                    Klient.Id = db.Klienci.Count() + 1;
+                    Klient.Imie = ImieK.Text;
+                    Klient.Nazwisko = NazwiskoK.Text;
+                    Klient.IdTrener = int.Parse(IdTrener.Text);
+                    Klient.IdRabat = int.Parse(IdRabat.Text);
+                    Klient.IdKarnet = int.Parse(IdKarnet.Text);
 
+                    db.Klienci.Add(Klient);
+                    db.SaveChanges();
+                    Komunikat.Text = "Dodano Pomyślnie";
+                }
             }
+            catch
+            {
+                Komunikat.Text = "Wystąpił błąd";
+            }
+        }
+        
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
