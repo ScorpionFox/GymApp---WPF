@@ -39,31 +39,34 @@ namespace PROJECT.MVVM.View
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            string Tabela = Combo.SelectedItem.ToString();
+            int Tabela = Combo.SelectedIndex;
 
             using (var db = new MyDbContext())
             {
                 switch (Tabela)
                 {
-                    case "Trenerzy":
-                        var query = (from T in db.Trenerzy
+                    case 0:
+                        var query1 = (from T in db.Trenerzy
                                     select T).ToList();
-                        DataGrid.ItemsSource = query;
+                        DataGrid.ItemsSource = query1;
                         break;
-                    case "Klienci":
-                        var query = (from T in db.Klienci
+                    case 1:
+                        var query2 = (from T in db.Klienci
                                      select T).ToList();
-                        DataGrid.ItemsSource = query;
+                        DataGrid.ItemsSource = query2;
                         break;
-                    case "Karnet":
-                        var query = (from T in db.Karnet
+                    case 2:
+                        var query3 = (from T in db.Rabat
                                      select T).ToList();
-                        DataGrid.ItemsSource = query;
+                        DataGrid.ItemsSource = query3;
                         break;
-                    case "Rabat":
-                        var query = (from T in db.Rabat
+                    case 3:
+                        var query4 = (from T in db.Karnet
                                      select T).ToList();
-                        DataGrid.ItemsSource = query;
+                        DataGrid.ItemsSource = query4;
+                        break;
+                    default:
+                        throw new Exception();
                         break;
                 }
 

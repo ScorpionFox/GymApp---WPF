@@ -38,11 +38,11 @@ namespace PROJECT.MVVM.View
         {
             using (var db = new MyDbContext())
             {
-                var query = (from T in db.Klienci
-                             join K in db.Karnety on T.Pesel equals K.ID_Klient
-                             where T.Pesel == Pesel
-                             select new { Name = T.Imie, Surname = T.Nazwisko, Date = K.Data_waznosci }).ToList();
-                  DataGrid.ItemsSource = query;
+                //var query = //(from T in db.Klienci
+                          //   join K in db.Karnet on T.Pesel equals K.ID_Klient
+                           //  where T.Pesel == Pesel
+                           //  select new { Name = T.Imie, Surname = T.Nazwisko, Date = K.Data_waznosci }).ToList();
+              //    DataGrid.ItemsSource = query;
 
             }
         }

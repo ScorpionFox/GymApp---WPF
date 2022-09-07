@@ -9,7 +9,7 @@ namespace PROJECT.Entities
 {
     class MyDbContext : DbContext
     {
-        string baza = "Data Source=DESKTOP-1D66II7;Initial Catalog=PROJECT;Integrated Security=True";
+        string baza = "Data Source=DESKTOP-1D66II7;Initial Catalog=Proj;Integrated Security=True";
 
         public DbSet<Karnet> Karnet { get; set; }
         public DbSet<Klienci> Klienci { get; set; }

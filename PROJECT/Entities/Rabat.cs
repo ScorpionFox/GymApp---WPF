@@ -11,6 +11,6 @@ namespace PROJECT.Entities
     {
         [Key]
         public int Id { get; set; }
-        public int Wartosc { get; set; }
+        public int? Wartosc { get; set; }
     }
 }

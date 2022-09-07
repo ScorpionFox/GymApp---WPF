@@ -13,8 +13,8 @@ namespace PROJECT.Entities
         public int Id { get; set; }
         public string Imie { get; set; }
         public string Nazwisko { get; set; }
-        public int IdTrener { get; set; }
-        public int IdRabat { get; set; }
-        public int IdKarnet { get; set; }
+        public int? IdTrener { get; set; }
+        public int? IdRabat { get; set; }
+        public int? IdKarnet { get; set; }
     }
 }
