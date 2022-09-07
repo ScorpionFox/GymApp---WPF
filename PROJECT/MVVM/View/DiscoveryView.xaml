@@ -22,7 +22,7 @@
                     <ComboBoxItem>Rabat</ComboBoxItem>
                     <ComboBoxItem>Karnet</ComboBoxItem>
                 </ComboBox>
-                <Button Content="Wykonaj" Height="58" Width="190" HorizontalAlignment="Center" Margin="10,30,0,0" />
+                <Button Content="Wykonaj" Height="58" Width="190" HorizontalAlignment="Center" Margin="10,30,0,0" Click="Button_Click" />
             </StackPanel>
             <DataGrid Margin="624,24,37,24" x:Name="DataGrid" />
         </Grid>

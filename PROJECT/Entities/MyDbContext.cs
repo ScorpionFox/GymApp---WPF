@@ -11,11 +11,10 @@ namespace PROJECT.Entities
     {
         string baza = "Data Source=DESKTOP-1D66II7;Initial Catalog=PROJECT;Integrated Security=True";
 
-        public DbSet<Karnety> Karnety { get; set; }
+        public DbSet<Karnet> Karnet { get; set; }
         public DbSet<Klienci> Klienci { get; set; }
-        public DbSet<Rabaty> Rabaty { get; set; }
-        public DbSet<Trenerzy> Trenerzy { get; set; }
-        public DbSet<Typy_Karnetu> Typy_Karnetu { get; set; }
+        public DbSet<Rabat> Rabat { get; set; }
+        public DbSet<Trenerzy> Trenerzy { get; set; }    
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

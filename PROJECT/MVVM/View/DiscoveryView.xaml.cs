@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using PROJECT.Entities;
+using System.Diagnostics;
 
 namespace PROJECT.MVVM.View
 {
@@ -33,6 +35,39 @@ namespace PROJECT.MVVM.View
         private void ComboBox_SelectionChanged_1(object sender, SelectionChangedEventArgs e)
         {
 
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            string Tabela = Combo.SelectedItem.ToString();
+
+            using (var db = new MyDbContext())
+            {
+                switch (Tabela)
+                {
+                    case "Trenerzy":
+                        var query = (from T in db.Trenerzy
+                                    select T).ToList();
+                        DataGrid.ItemsSource = query;
+                        break;
+                    case "Klienci":
+                        var query = (from T in db.Klienci
+                                     select T).ToList();
+                        DataGrid.ItemsSource = query;
+                        break;
+                    case "Karnet":
+                        var query = (from T in db.Karnet
+                                     select T).ToList();
+                        DataGrid.ItemsSource = query;
+                        break;
+                    case "Rabat":
+                        var query = (from T in db.Rabat
+                                     select T).ToList();
+                        DataGrid.ItemsSource = query;
+                        break;
+                }
+
+            }
         }
     }
 }

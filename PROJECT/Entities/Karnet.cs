@@ -7,14 +7,12 @@ using System.ComponentModel.DataAnnotations;
 
 namespace PROJECT.Entities
 {
-    class Karnety
+    class Karnet
     {
         
         [Key]
-        public int Numer_seryjny { get; set; }
+        public int Id { get; set; }
         public DateTime Data_zakupu { get; set; }
-        public DateTime Data_waznosci { get; set; }
-        public int ID_Klient { get; set; }
-        public string Typ_Karnetu { get; set; }
+        public DateTime Data_waznosci { get; set; }      
     }
 }

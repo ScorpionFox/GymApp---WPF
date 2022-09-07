@@ -7,10 +7,10 @@ using System.ComponentModel.DataAnnotations;
 
 namespace PROJECT.Entities
 {
-    class Typy_Karnetu
+    class Rabat
     {
         [Key]
-        public string Typ { get; set; }
-        public string Okres_waznosci { get; set; }
+        public int Id { get; set; }
+        public int Wartosc { get; set; }
     }
 }

@@ -10,10 +10,10 @@ namespace PROJECT.Entities
     class Trenerzy
     {
         [Key]
-        public int Pesel { get; set; }
+        public int Id { get; set; }
         public string Imie { get; set; }
         public string Nazwisko { get; set; }
-        public string Email { get; set; }
+        public string Specjalizacja { get; set; }
 
     }
 }

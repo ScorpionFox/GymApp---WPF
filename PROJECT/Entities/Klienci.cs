@@ -10,11 +10,11 @@ namespace PROJECT.Entities
     class Klienci
     {
         [Key]
-        public int Pesel { get; set; }
+        public int Id { get; set; }
         public string Imie { get; set; }
         public string Nazwisko { get; set; }
-        public string Email { get; set; }
-        public int ID_Trener { get; set; }
-        public int ID_Rabat { get; set; }
+        public int IdTrener { get; set; }
+        public int IdRabat { get; set; }
+        public int IdKarnet { get; set; }
     }
 }
