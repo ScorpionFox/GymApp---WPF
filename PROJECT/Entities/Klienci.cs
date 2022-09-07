@@ -7,6 +7,9 @@ using System.ComponentModel.DataAnnotations;
 
 namespace PROJECT.Entities
 {
+    /// <summary>
+    /// 
+    /// </summary>
     class Klienci
     {
         [Key]

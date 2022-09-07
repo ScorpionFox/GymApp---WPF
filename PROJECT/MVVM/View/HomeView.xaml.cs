@@ -35,8 +35,7 @@ namespace PROJECT.MVVM.View
                 using (var db = new MyDbContext())
                 {
                     Klienci Klient = new Klienci();
-                    // int last = db.Klienci.Count
-                    Klient.Id = db.Klienci.Max() + 1;
+                    Klient.Id = db.Klienci.Max(e => e.Id) + 1;
                     Klient.Imie = ImieK.Text;
                     Klient.Nazwisko = NazwiskoK.Text;
                     Klient.IdTrener = int.Parse(IdTrener.Text);
