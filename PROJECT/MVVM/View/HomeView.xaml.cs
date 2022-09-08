@@ -78,5 +78,10 @@ namespace PROJECT.MVVM.View
                 Komunikat2.Text = "Wystąpił błąd";
             }
         }
+
+        private void ImieK_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }   
 }

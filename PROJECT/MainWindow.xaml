@@ -40,23 +40,23 @@
 
             <!-- Przyciski menu -->
             <StackPanel Margin="510,7,48,17" Orientation="Horizontal">
-                <RadioButton Content="Pierwsze"
-                             Height="50"
-                             Foreground="LightGray"
-                             FontSize="16"                           
-                             Style="{StaticResource MenuButtonTheme}" Checked="RadioButton_Checked_2"
-                             IsChecked="True"
-                             Command="{Binding HomeViewCommand}" Width="160"/>
-                <!-- Podpięcie stylu z pliku MenuButtonTheme-->
-
-                <RadioButton Content="Drugie"
+                <RadioButton Content="Sprawdź"
                              Height="50"
                              Foreground="LightGray"
                              FontSize="16"
                              Margin="0,0,0,0"
+                             IsChecked="True"
                              Style="{StaticResource MenuButtonTheme}" Checked="RadioButton_Checked"
                              Command="{Binding DiscoveryViewCommand}" Width="160"/>
-                <RadioButton Content="Trzecie"
+                <RadioButton Content="Dodaj"
+                             Height="50"
+                             Foreground="LightGray"
+                             FontSize="16"                           
+                             Style="{StaticResource MenuButtonTheme}" Checked="RadioButton_Checked_2"                     
+                             Command="{Binding HomeViewCommand}" Width="160"/>
+                <!-- Podpięcie stylu z pliku MenuButtonTheme-->
+               
+                <RadioButton Content="Usuń"
                              Height="50"
                              Foreground="LightGray"
                              FontSize="16"

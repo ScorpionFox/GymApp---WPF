@@ -3,42 +3,20 @@
 
     <Style TargetType="{x:Type TextBox}"
            x:Key="ModernTextBox">
-        <Setter Property="Template">
-            <Setter.Value>
-                <ControlTemplate TargetType="{x:Type TextBox}">
-                    <Border CornerRadius="20"
-                            Background="#353240"
-                            Width="200" 
-                            Height="60">
+        <Setter Property="Background" Value="#353240"/>
+        <Setter Property="Foreground"  Value="DarkGray" />
+        <Setter Property="FontSize" Value="25" />
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="TextAlignment" Value="Center"/>
+        <Setter Property="Width" Value="231"/>
+        <Setter Property="Height" Value="40"/>
+        <Setter Property="TextWrapping" Value="Wrap"/>
 
-                        <Grid>
-                            <Rectangle StrokeThickness="1"/>
-                            <TextBox Margin="1"
-                                   
-                                     BorderThickness="0"
-                                     Background="Transparent"
-                                     VerticalContentAlignment="Center"
-                                     Padding="6"
-                                     Foreground="#CFCFCF"
-                                     x:Name="SearchBox"
-                                     FontSize="30"/>
+    </Style>
 
-                            <TextBlock IsHitTestVisible="False"                                     
-                                       VerticalAlignment="Center"
-                                       HorizontalAlignment="Left"
-                                       Margin="10,0,0,0"
-                                       FontSize="30"
-                                       Foreground="DarkGray"
-                                       Grid.Column="1">
-
-                          
-                                
-                            </TextBlock>
-                        </Grid>
-                        
-                    </Border>
-                </ControlTemplate>
-            </Setter.Value>
-        </Setter>
+    
+    <Style TargetType="{x:Type Border}">
+        <Setter Property="CornerRadius" Value="20"/>
     </Style>
 </ResourceDictionary>

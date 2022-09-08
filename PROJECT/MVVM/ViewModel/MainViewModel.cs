@@ -38,7 +38,7 @@ namespace PROJECT.MVVM.ViewModel
             HomeVM = new HomeViewModel();
             DiscoveryVM = new DiscoveryViewModel();
             TrainVM = new TrainViewModel();
-            CurrentView = HomeVM;
+            CurrentView = DiscoveryVM;
 
             HomeViewCommand = new RelayCommand(o =>
             {
