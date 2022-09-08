@@ -79,6 +79,11 @@ namespace PROJECT.MVVM.View
             }
 
             }
+
+        private void Combo2_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
+    }
     }  
 

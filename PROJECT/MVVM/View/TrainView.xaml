@@ -11,7 +11,7 @@
     <Border CornerRadius="50"  Background="LightBlue">
         <Grid>
             <StackPanel Margin="-75,15,866,0">
-                <ComboBox Width="231" Height="35" HorizontalAlignment="Center" Margin="10,10,0,0" x:Name="Combo2">
+                <ComboBox SelectionChanged="Combo2_SelectionChanged" x:Name="Combo2" Width="231" Height="45" HorizontalAlignment="Center" Margin="10,10,0,0" FontSize="25" HorizontalContentAlignment="Center" VerticalContentAlignment="Top" BorderBrush="#FF353240" Foreground="Black" OpacityMask="Black" FontWeight="Bold">
                     <ComboBoxItem IsSelected="True">Trenerzy</ComboBoxItem>
                     <ComboBoxItem>Klienci</ComboBoxItem>
                     <ComboBoxItem>Rabat</ComboBoxItem>
