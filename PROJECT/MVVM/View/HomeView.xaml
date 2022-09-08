@@ -12,7 +12,7 @@
         <Grid>
             <StackPanel Margin="69,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Left"  Height="408">
                 <TextBox Margin="10,5,0,0" Style="{StaticResource ModernTextBox}" Text="Dodawanie Klienta"  Background="#FF353240" FontWeight="Bold" Foreground="White" Width="247" Height="43" IsReadOnly="True" />
-                <TextBox x:Name="ImieK" Margin="10,5,0,0" Style="{StaticResource ModernTextBox}" Text="Imie" TextChanged="ImieK_TextChanged" Background="#FF353240" />
+                <TextBox x:Name="ImieK" Margin="10,5,0,0" Style="{StaticResource ModernTextBox}" Text="Imię" TextChanged="ImieK_TextChanged" Background="#FF353240" />
                 <TextBox x:Name="NazwiskoK" Margin="10,5,0,0"  Style="{StaticResource ModernTextBox}" Text="Nazwisko"/>
                 <TextBox x:Name="IdTrener" Margin="10,5,0,0" Style="{StaticResource ModernTextBox}" Text="IdTrener"/>
                 <TextBox x:Name="IdRabat" Margin="10,5,0,0" Style="{StaticResource ModernTextBox}" Text="IdRabat"/>
@@ -25,7 +25,7 @@
 
             <StackPanel Margin="802,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Left" Height="357">
                 <TextBox Margin="10,5,0,0" Style="{StaticResource ModernTextBox}" Text="Dodawanie Trenera"  Background="#FF353240" FontWeight="Bold" Foreground="White" Width="247" Height="43" IsReadOnly="True" />
-                <TextBox x:Name="ImieT" Margin="10,5,0,0" Text="Imie" Style="{StaticResource ModernTextBox}"/>
+                <TextBox x:Name="ImieT" Margin="10,5,0,0" Text="Imię" Style="{StaticResource ModernTextBox}"/>
                 <TextBox x:Name="NazwiskoT" Margin="10,5,0,0" Text="Nazwisko" Style="{StaticResource ModernTextBox}"/>
                 <TextBox x:Name="Specjalizacja" Margin="10,5,0,0" Text="Specjalizacja" Style="{StaticResource ModernTextBox}"/>
                 <Border Background="#353240" Width="231" Margin="10,5,0,0" Height="40">
