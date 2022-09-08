@@ -29,6 +29,10 @@ namespace PROJECT.MVVM.View
             Komunikat2.Text = "";
         }
 
+        /// <summary>
+        /// Dodawanie Klienta do bazy danych
+        /// </summary>
+
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             try
@@ -53,7 +57,10 @@ namespace PROJECT.MVVM.View
                 Komunikat.Text = "Wystąpił błąd";
             }
         }
-        
+
+        /// <summary>
+        /// Dodawanie Trenera do bazy danych
+        /// </summary>
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
@@ -62,12 +69,11 @@ namespace PROJECT.MVVM.View
                 using (var db = new MyDbContext())
                 {
                     Trenerzy Trener = new Trenerzy();
-                    // int last = db.Klienci.Count
                     Trener.Id = db.Trenerzy.Max(e => e.Id) + 1;
                     Trener.Imie = ImieT.Text;
                     Trener.Nazwisko = NazwiskoT.Text;
                     Trener.Specjalizacja = Specjalizacja.Text;
-                    
+
                     db.Trenerzy.Add(Trener);
                     db.SaveChanges();
                     Komunikat2.Text = "Dodano Pomyślnie";
@@ -83,5 +89,5 @@ namespace PROJECT.MVVM.View
         {
 
         }
-    }   
+    }
 }

@@ -10,7 +10,8 @@
     <Border CornerRadius="50"  Background="LightGreen">
         <Grid>
             <StackPanel Margin="-75,60,866,0">
-                <ComboBox x:Name="Combo" SelectionChanged="ComboBox_SelectionChanged_1" Width="231" Height="45" HorizontalAlignment="Center" Margin="10,10,0,0" FontSize="25" HorizontalContentAlignment="Center" VerticalContentAlignment="Top" BorderBrush="#FF353240" Foreground="Black" OpacityMask="Black" FontWeight="Bold">>
+
+                <ComboBox x:Name="Combo" SelectionChanged="ComboBox_SelectionChanged_1" Width="231" Height="45" HorizontalAlignment="Center" Margin="10,10,0,0" FontSize="25" HorizontalContentAlignment="Center" VerticalContentAlignment="Top" BorderBrush="#FF353240" Foreground="Black" OpacityMask="Black" FontWeight="Bold">
                     <ComboBox.Background>
                         <LinearGradientBrush EndPoint="0,1">
                             <GradientStop Color="#FFF0F0F0"/>

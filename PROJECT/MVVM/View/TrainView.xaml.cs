@@ -27,6 +27,9 @@ namespace PROJECT.MVVM.View
             InitializeComponent();
             Komunikat3.Text = "";
         }
+        /// <summary>
+        /// Usuwanie wybranego rekordu z wybranej tabeli z bazy danych
+        /// </summary>
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
@@ -78,12 +81,12 @@ namespace PROJECT.MVVM.View
                 }
             }
 
-            }
+        }
 
         private void Combo2_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
         }
     }
-    }  
+}
 

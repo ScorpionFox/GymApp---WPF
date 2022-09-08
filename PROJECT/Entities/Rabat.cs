@@ -7,6 +7,9 @@ using System.ComponentModel.DataAnnotations;
 
 namespace PROJECT.Entities
 {
+    /// <summary>
+    /// Odzworowanie tabeli Rabat z bazy danych w kodzie
+    /// </summary>
     class Rabat
     {
         [Key]

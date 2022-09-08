@@ -8,7 +8,7 @@ using System.ComponentModel.DataAnnotations;
 namespace PROJECT.Entities
 {
     /// <summary>
-    /// 
+    /// Odzworowanie tabeli Klienci z bazy danych w kodzie
     /// </summary>
     class Klienci
     {

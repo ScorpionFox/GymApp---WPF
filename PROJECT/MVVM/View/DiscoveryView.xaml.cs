@@ -37,10 +37,8 @@ namespace PROJECT.MVVM.View
 
         }
         /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// Wypisuje wynik zapytania bazy danych w DataGridzie
+        /// </summary>     
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             int Tabela = Combo.SelectedIndex;
@@ -51,22 +49,22 @@ namespace PROJECT.MVVM.View
                 {
                     case 0:
                         var query1 = (from T in db.Trenerzy
-                                    select T).ToList();
+                                      select T).ToList();
                         DataGrid.ItemsSource = query1;
                         break;
                     case 1:
                         var query2 = (from T in db.Klienci
-                                     select T).ToList();
+                                      select T).ToList();
                         DataGrid.ItemsSource = query2;
                         break;
                     case 2:
                         var query3 = (from T in db.Rabat
-                                     select T).ToList();
+                                      select T).ToList();
                         DataGrid.ItemsSource = query3;
                         break;
                     case 3:
                         var query4 = (from T in db.Karnet
-                                     select T).ToList();
+                                      select T).ToList();
                         DataGrid.ItemsSource = query4;
                         break;
                     default:

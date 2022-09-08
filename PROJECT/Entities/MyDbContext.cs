@@ -7,14 +7,22 @@ using Microsoft.EntityFrameworkCore;
 
 namespace PROJECT.Entities
 {
+    /// <summary>
+    /// Połączenie z bazą danych i reprezentacje tabeli
+    /// </summary>
     class MyDbContext : DbContext
     {
         string baza = "Data Source=DESKTOP-1D66II7;Initial Catalog=Proj;Integrated Security=True";
 
+        //Reprezentacja tabeli w bazie danych
         public DbSet<Karnet> Karnet { get; set; }
         public DbSet<Klienci> Klienci { get; set; }
         public DbSet<Rabat> Rabat { get; set; }
         public DbSet<Trenerzy> Trenerzy { get; set; }    
+
+        /// <summary>
+        /// Łączenie z bazą danych
+        /// </summary>
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

@@ -7,6 +7,9 @@ using System.ComponentModel.DataAnnotations;
 
 namespace PROJECT.Entities
 {
+    /// <summary>
+    /// Odzworowanie tabeli Trenerzy z bazy danych w kodzie
+    /// </summary>
     class Trenerzy
     {
         [Key]

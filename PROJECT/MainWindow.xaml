@@ -54,16 +54,15 @@
                              FontSize="16"                           
                              Style="{StaticResource MenuButtonTheme}" Checked="RadioButton_Checked_2"                     
                              Command="{Binding HomeViewCommand}" Width="160"/>
-                <!-- Podpięcie stylu z pliku MenuButtonTheme-->
-               
+
+
                 <RadioButton Content="Usuń"
                              Height="50"
                              Foreground="LightGray"
                              FontSize="16"
                              Style="{StaticResource MenuButtonTheme}" Checked="RadioButton_Checked_1"
                              Command="{Binding TrainViewCommand}" Width="160"/>
-                <!-- Podpięcie stylu z pliku MenuButtonTheme-->
-                <!-- Podpięcie stylu z pliku MenuButtonTheme-->
+
             </StackPanel>
 
             <TextBox  Width="250"
@@ -76,9 +75,6 @@
                             Margin="10,4,0,10"
                             Content="{Binding CurrentView}"/>
             <!-- CurrentView -->
-
         </Grid>
-
-
     </Border>
 </Window>

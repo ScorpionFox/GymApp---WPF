@@ -15,7 +15,7 @@
 
     </Style>
 
-    
+
     <Style TargetType="{x:Type Border}">
         <Setter Property="CornerRadius" Value="20"/>
     </Style>
