@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace PROJECT.MVVM.ViewModel
 {
     /// <summary>
-    /// klasa widoku MainView
+    /// klasa widoku MainView zawierająca dane potrzebne do przełączania między widokami
     /// </summary>
     class MainViewModel : ObservableObject
     {
@@ -35,7 +35,9 @@ namespace PROJECT.MVVM.ViewModel
                 }
         }
 
-
+        /// <summary>
+        /// Przełączanie, zmiana obecnego widoku na inny
+        /// </summary>
         public MainViewModel()
         {
             HomeVM = new HomeViewModel();

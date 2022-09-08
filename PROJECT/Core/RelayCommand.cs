@@ -7,6 +7,9 @@ using System.Windows.Input;
 
 namespace PROJECT.Core
 {
+    /// <summary>
+    /// Umożliwia przypisanie komendy do radiobuttona
+    /// </summary>
     class RelayCommand : ICommand
     {
         private Action<object> _execute;

@@ -72,7 +72,7 @@
             <ContentControl Grid.Row="1"
                             Margin="10,4,0,10"
                             Content="{Binding CurrentView}"/>
-            <Image Margin="0,0,745,3" Stretch="Fill" Source="C:\Users\HP\Desktop\Nowy folder\Logo.png"/>
+            <Image Margin="2,7,743,516" Stretch="Fill" Source="C:\Users\HP\Desktop\Nowy folder\Logo.png" Grid.RowSpan="2"/>
             <!-- CurrentView -->
         </Grid>
     </Border>
