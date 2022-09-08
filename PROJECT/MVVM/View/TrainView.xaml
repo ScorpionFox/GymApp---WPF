@@ -18,10 +18,9 @@
                     <ComboBoxItem>Karnet</ComboBoxItem>
                 </ComboBox>
                 <TextBox HorizontalAlignment="Center" Margin="10,15,0,0" Text="ID" TextWrapping="Wrap" Width="231" x:Name="Id"/>
-                <TextBlock x:Name="Komunikat2" Background="Yellow" Width="231" Margin="10,5,0,0"></TextBlock>
+                <TextBlock x:Name="Komunikat3" Background="Yellow" Width="231" Margin="10,5,0,0"></TextBlock>
                 <Button Content="Wykonaj" Height="58" Width="190" HorizontalAlignment="Center" Margin="10,30,0,0" Click="Button_Click" />
             </StackPanel>
-            <DataGrid Margin="624,24,37,24" x:Name="DataGrid" />
             <!-- <Image Margin="340,88,22,134" Stretch="Fill" Source="C:\Users\HP\source\repos\PROJECT\PROJECT\Images\Mięśnie brzucha.jpg"/> -->
         </Grid>
     </Border>

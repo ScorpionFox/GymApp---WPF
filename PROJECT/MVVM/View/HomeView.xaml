@@ -14,18 +14,19 @@
 
 
                 <TextBox x:Name="ImieK" HorizontalAlignment="Center" Margin="10,5,0,0"  Text="Imie" TextWrapping="Wrap" Width="231" />
-                <TextBox x:Name="NazwiskoK" HorizontalAlignment="Center" Margin="10,5,0,0"  TextWrapping="Wrap" Width="231" />
-                <TextBox x:Name="IdTrener" HorizontalAlignment="Center" Margin="10,5,0,0"  TextWrapping="Wrap" Width="231" />
-                <TextBox x:Name="IdRabat" HorizontalAlignment="Center" Margin="10,5,0,0"  TextWrapping="Wrap" Width="231" />
-                <TextBox x:Name="IdKarnet" HorizontalAlignment="Center" Margin="10,5,0,0"  TextWrapping="Wrap" Width="231"/>
+                <TextBox x:Name="NazwiskoK" HorizontalAlignment="Center" Margin="10,5,0,0"  Text="Nazwisko" TextWrapping="Wrap" Width="231" />
+                <TextBox x:Name="IdTrener" HorizontalAlignment="Center" Margin="10,5,0,0"  Text="IdTrener" TextWrapping="Wrap" Width="231" />
+                <TextBox x:Name="IdRabat" HorizontalAlignment="Center" Margin="10,5,0,0"  Text="IdRabat" TextWrapping="Wrap" Width="231" />
+                <TextBox x:Name="IdKarnet" HorizontalAlignment="Center" Margin="10,5,0,0" Text="IdKarnet" TextWrapping="Wrap" Width="231"/>
                 <TextBlock x:Name="Komunikat" Background="Yellow" Width="231" Margin="10,5,0,0"> </TextBlock>
             </StackPanel>
             <Button Content="Wykonaj" Height="58" Width="190" Click="Button_Click" Margin="64,184,956,208"/>
             <StackPanel Margin="644,0,10,0" VerticalAlignment="Center" Height="450">
-                <TextBox x:Name="Idt" HorizontalAlignment="Center" Margin="10,30,0,0"  TextWrapping="Wrap" Width="231"/>
-                <TextBox x:Name="ImieT" HorizontalAlignment="Center" Margin="10,5,0,0" Text="Data Zakupu" TextWrapping="Wrap" Width="231" />
-                <TextBox x:Name="NazwiskoT" HorizontalAlignment="Center" Margin="10,10,0,0"  TextWrapping="Wrap" Width="232" />
-                <TextBox x:Name="Specjalizacja" HorizontalAlignment="Center" Margin="10,10,0,0" Text="Ważny do ..." TextWrapping="Wrap" Width="231" />
+                
+                <TextBox x:Name="ImieT" HorizontalAlignment="Center" Margin="10,5,0,0" Text="Imie" TextWrapping="Wrap" Width="231" />
+                <TextBox x:Name="NazwiskoT" HorizontalAlignment="Center" Margin="10,5,0,0" Text="Nazwisko" TextWrapping="Wrap" Width="232" />
+                <TextBox x:Name="Specjalizacja" HorizontalAlignment="Center" Margin="10,5,0,0" Text="Specjalizacja" TextWrapping="Wrap" Width="231" />
+                <TextBlock x:Name="Komunikat2" Background="Yellow" Width="231" Margin="10,5,0,0"></TextBlock>
                 <Button Content="Wykonaj" Height="58" Width="189" Margin="10,10,0,0" Click="Button_Click_1"/>
             </StackPanel>
 

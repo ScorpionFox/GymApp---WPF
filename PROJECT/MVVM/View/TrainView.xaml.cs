@@ -25,6 +25,7 @@ namespace PROJECT.MVVM.View
         public TrainView()
         {
             InitializeComponent();
+            Komunikat3.Text = "";
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -34,38 +35,50 @@ namespace PROJECT.MVVM.View
 
             using (var db = new MyDbContext())
             {
-                switch (Tabela)
+                try
                 {
-                    case 0:
-                        Trenerzy Trener = new Trenerzy() { Id = index };
-                        db.Trenerzy.Attach(Trener);
-                        db.Trenerzy.Remove(Trener);
-                        db.SaveChanges();
-                        break;
-                    case 1:
-                        Klienci Klient = new Klienci() { Id = index };
-                        db.Klienci.Attach(Klient);
-                        db.Klienci.Remove(Klient);
-                        db.SaveChanges();
-                        break;
-                    case 2:
-                        Rabat Rabat = new Rabat() { Id = index };
-                        db.Rabat.Attach(Rabat);
-                        db.Rabat.Remove(Rabat);
-                        db.SaveChanges();
-                        break;
-                    case 3:
-                        Karnet Karnet = new Karnet() { Id = index };
-                        db.Karnet.Attach(Karnet);
-                        db.Karnet.Remove(Karnet);
-                        db.SaveChanges();
-                        break;
-                    default:
-                        throw new Exception();
-                        break;
+                    switch (Tabela)
+                    {
+                        case 0:
+                            Trenerzy Trener = new Trenerzy() { Id = index };
+                            db.Trenerzy.Attach(Trener);
+                            db.Trenerzy.Remove(Trener);
+                            db.SaveChanges();
+                            Komunikat3.Text = "Usunięto pomyślnie";
+                            break;
+                        case 1:
+                            Klienci Klient = new Klienci() { Id = index };
+                            db.Klienci.Attach(Klient);
+                            db.Klienci.Remove(Klient);
+                            db.SaveChanges();
+                            Komunikat3.Text = "Usunięto pomyślnie";
+                            break;
+                        case 2:
+                            Rabat Rabat = new Rabat() { Id = index };
+                            db.Rabat.Attach(Rabat);
+                            db.Rabat.Remove(Rabat);
+                            db.SaveChanges();
+                            Komunikat3.Text = "Usunięto pomyślnie";
+                            break;
+                        case 3:
+                            Karnet Karnet = new Karnet() { Id = index };
+                            db.Karnet.Attach(Karnet);
+                            db.Karnet.Remove(Karnet);
+                            db.SaveChanges();
+                            Komunikat3.Text = "Usunięto pomyślnie";
+                            break;
+                        default:
+                            throw new Exception();
+                            break;
+                    }
                 }
+                catch
+                {
+                    Komunikat3.Text = "Wystąpił błąd";
+                }
+            }
 
             }
         }
-    }   
-}
+    }  
+
