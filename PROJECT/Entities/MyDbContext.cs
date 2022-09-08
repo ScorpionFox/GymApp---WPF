@@ -12,7 +12,7 @@ namespace PROJECT.Entities
     /// </summary>
     class MyDbContext : DbContext
     {
-        string baza = "Data Source=DESKTOP-1D66II7;Initial Catalog=Proj;Integrated Security=True";
+        string baza = "Data Source=MATEUSZ;Initial Catalog=Proj;Integrated Security=True";
 
         //Reprezentacja tabeli w bazie danych
         public DbSet<Karnet> Karnet { get; set; }
