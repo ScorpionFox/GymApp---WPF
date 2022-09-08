@@ -40,36 +40,39 @@
 
             <!-- Przyciski menu -->
             <StackPanel Margin="510,7,48,17" Orientation="Horizontal">
-                <RadioButton Content="Sprawdź"
+                <RadioButton Content="Sprawdzanie"
                              Height="50"
                              Foreground="LightGray"
                              FontSize="16"
                              Margin="0,0,0,0"
                              IsChecked="True"
                              Style="{StaticResource MenuButtonTheme}" Checked="RadioButton_Checked"
-                             Command="{Binding DiscoveryViewCommand}" Width="160"/>
-                <RadioButton Content="Dodaj"
+                             Command="{Binding DiscoveryViewCommand}" Width="203"/>
+                <RadioButton Content="Dodawanie"
                              Height="50"
                              Foreground="LightGray"
                              FontSize="16"                           
                              Style="{StaticResource MenuButtonTheme}" Checked="RadioButton_Checked_2"                     
-                             Command="{Binding HomeViewCommand}" Width="160"/>
+                             Command="{Binding HomeViewCommand}" Width="192"/>
 
 
-                <RadioButton Content="Usuń"
+                <RadioButton Content="Usuwanie"
                              Height="50"
                              Foreground="LightGray"
                              FontSize="16"
                              Style="{StaticResource MenuButtonTheme}" Checked="RadioButton_Checked_1"
-                             Command="{Binding TrainViewCommand}" Width="160"/>
+                             Command="{Binding TrainViewCommand}" Width="180" RenderTransformOrigin="0.5,0.5">
+                    <RadioButton.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-0.029"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </RadioButton.RenderTransform>
+                </RadioButton>
 
             </StackPanel>
-
-            <TextBox  Width="250"
-                      VerticalContentAlignment="Center"
-                      HorizontalAlignment="Center"
-                      Margin="0,23,0,17"
-                      Style="{StaticResource ModernTextBox}" TextChanged="TextBox_TextChanged" Grid.Column="2"/>
 
             <ContentControl Grid.Row="1"
                             Margin="10,4,0,10"

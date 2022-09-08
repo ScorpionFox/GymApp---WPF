@@ -25,7 +25,7 @@ namespace PROJECT.MVVM.View
         public HomeView()
         {
             InitializeComponent();
-            Komunikat.Text = "";
+            Komunikat1.Text = "";
             Komunikat2.Text = "";
         }
 
@@ -49,12 +49,12 @@ namespace PROJECT.MVVM.View
 
                     db.Klienci.Add(Klient);
                     db.SaveChanges();
-                    Komunikat.Text = "Dodano Pomyślnie";
+                    Komunikat1.Text = "Dodano Pomyślnie";
                 }
             }
             catch
             {
-                Komunikat.Text = "Wystąpił błąd";
+                Komunikat1.Text = "Wystąpił błąd";
             }
         }
 

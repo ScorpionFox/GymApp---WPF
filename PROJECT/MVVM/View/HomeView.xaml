@@ -10,109 +10,30 @@
 
     <Border CornerRadius="50" Background="LightCoral">
         <Grid>
-            <StackPanel Margin="69,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Left"  Height="357">
+            <StackPanel Margin="69,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Left"  Height="408">
+                <TextBox Margin="10,5,0,0" Style="{StaticResource ModernTextBox}" Text="Dodawanie Klienta"  Background="#FF353240" FontWeight="Bold" Foreground="White" Width="247" Height="43" IsReadOnly="True" />
                 <TextBox x:Name="ImieK" Margin="10,5,0,0" Style="{StaticResource ModernTextBox}" Text="Imie" TextChanged="ImieK_TextChanged" Background="#FF353240" />
                 <TextBox x:Name="NazwiskoK" Margin="10,5,0,0"  Style="{StaticResource ModernTextBox}" Text="Nazwisko"/>
                 <TextBox x:Name="IdTrener" Margin="10,5,0,0" Style="{StaticResource ModernTextBox}" Text="IdTrener"/>
                 <TextBox x:Name="IdRabat" Margin="10,5,0,0" Style="{StaticResource ModernTextBox}" Text="IdRabat"/>
                 <TextBox x:Name="IdKarnet" Margin="10,5,0,0" Style="{StaticResource ModernTextBox}" Text="IdKarnet"/>
-                <TextBlock x:Name="Komunikat" Background="Yellow" Width="231" Margin="10,5,0,0"></TextBlock>
-                <Button Content="Wykonaj" Height="58" Width="190" Click="Button_Click" Margin="10,25,0,0"/>
+                <Border Background="#353240" Width="231" Margin="10,5,0,0" Height="40">
+                    <TextBlock x:Name="Komunikat1" TextAlignment="Center" Background="Transparent" Width="231"  Height="40" Foreground="Red" FontSize="22" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" ></TextBlock>
+                </Border>
+                <Button Content="Dodaj" Height="58" Width="190" Click="Button_Click" Margin="10,25,0,0"/>
             </StackPanel>
 
             <StackPanel Margin="802,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Left" Height="357">
+                <TextBox Margin="10,5,0,0" Style="{StaticResource ModernTextBox}" Text="Dodawanie Trenera"  Background="#FF353240" FontWeight="Bold" Foreground="White" Width="247" Height="43" IsReadOnly="True" />
                 <TextBox x:Name="ImieT" Margin="10,5,0,0" Text="Imie" Style="{StaticResource ModernTextBox}"/>
                 <TextBox x:Name="NazwiskoT" Margin="10,5,0,0" Text="Nazwisko" Style="{StaticResource ModernTextBox}"/>
                 <TextBox x:Name="Specjalizacja" Margin="10,5,0,0" Text="Specjalizacja" Style="{StaticResource ModernTextBox}"/>
-                <TextBlock x:Name="Komunikat2" Background="Yellow" Width="231" Margin="10,5,0,0"></TextBlock>
-                <Button Content="Wykonaj" Height="58" Width="189" Margin="10,10,0,0" Click="Button_Click_1"/>
+                <Border Background="#353240" Width="231" Margin="10,5,0,0" Height="40">
+                    <TextBlock x:Name="Komunikat2" TextAlignment="Center" Background="Transparent" Width="231"  Height="40" Foreground="Red" FontSize="22" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" ></TextBlock>
+                </Border>
+                <Button Content="Dodaj" Height="58" Width="189" Margin="10,10,0,0" Click="Button_Click_1"/>
             </StackPanel>
 
         </Grid>
     </Border>
-
-    <!--
-    <StackPanel>
-        <TextBlock Text="Discover"
-                       Foreground="White"
-                       FontSize="28"
-                       HorizontalAlignment="Left"
-                       Margin="0,0,0,20"/>
-
-        <StackPanel Orientation="Horizontal">
-            <Border Width="400"
-                        Height="200">
-
-                <Border.Background>
-                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
-                        <GradientStop Color="#5bc3ff" Offset="0.0"/>
-                        <GradientStop Color="#3aa0ff" Offset="1"/>
-                    </LinearGradientBrush>
-                </Border.Background>
-
-                <Border.Clip>
-                    <RectangleGeometry RadiusX="10"
-                                           RadiusY="10"
-                                           Rect="0,0,400,200"/>
-                </Border.Clip>
-
-                <Grid>
-                    <StackPanel>
-                        <TextBlock Text="SiłFitownia\n Xd"/>
-                    </StackPanel>
-                </Grid>
-            </Border>
-            <Border Width="200" Height="200"
-                        CornerRadius="10"
-                        Margin="45,0,0,0">
-
-                <Border.Background>
-                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
-                        <GradientStop Color="#ffb7" Offset="0.0"/>
-                        <GradientStop Color="#ffa0ff" Offset="1"/>
-                    </LinearGradientBrush>
-                </Border.Background>
-
-            </Border>
-        </StackPanel>
-
-        <StackPanel>
-
-            <StackPanel.Resources>
-                <Style TargetType="{x:Type Border}">
-                    <Setter Property="Margin" Value="15,0,0,0"/>
-                </Style>
-            </StackPanel.Resources>
-            
-            <TextBlock Text="WOOOOW"
-                       Foreground="White"
-                       FontSize="20"
-                       HorizontalAlignment="Left"
-                       Margin="0,0,0,10"/>
-            <StackPanel Orientation="Horizontal">
-                <Border Width="150"
-                        Height="150"
-                        Background="#8460cc"
-                        CornerRadius="10"/>
-                <Border Width="150"
-                        Height="150"
-                        Background="#ffbbaa"
-                        CornerRadius="10"/>
-                <Border Width="150"
-                        Height="150"
-                        Background="#bbffee"
-                        CornerRadius="10"/>
-                <Border Width="150"
-                        Height="150"
-                        Background="#6677ff"
-                        CornerRadius="10"/>
-
-
-            </StackPanel>
-        </StackPanel>
-
-    </StackPanel>
-    -->
-
 </UserControl>
-<!-- Karnety -->

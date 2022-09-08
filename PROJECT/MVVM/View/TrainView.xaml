@@ -18,8 +18,10 @@
                     <ComboBoxItem>Karnet</ComboBoxItem>
                 </ComboBox>
                 <TextBox  Margin="10,15,0,0" Text="ID" Style="{StaticResource ModernTextBox}" x:Name="Id"/>
-                <TextBlock x:Name="Komunikat3" Background="Yellow" Width="231" Margin="10,5,0,0"></TextBlock>
-                <Button Content="Wykonaj" Height="58" Width="190" HorizontalAlignment="Center" Margin="10,30,0,0" Click="Button_Click" />
+                <Border Background="#353240" Width="231" Margin="10,5,0,0" Height="40">
+                    <TextBlock x:Name="Komunikat3" TextAlignment="Center" Background="Transparent" Width="231"  Height="40" Foreground="Red" FontSize="22" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" ></TextBlock>
+                </Border>
+                <Button Content="Usuń" Height="58" Width="190" HorizontalAlignment="Center" Margin="10,30,0,0" Click="Button_Click" />
             </StackPanel>
             <!-- <Image Margin="340,88,22,134" Stretch="Fill" Source="C:\Users\HP\source\repos\PROJECT\PROJECT\Images\Mięśnie brzucha.jpg"/> -->
         </Grid>
