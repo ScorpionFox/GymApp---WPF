@@ -10,7 +10,11 @@
 
     <Border CornerRadius="50" Background="LightCoral">
         <Grid>
-            <StackPanel Margin="69,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Left"  Height="408">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="137*"/>
+                <RowDefinition Height="13*"/>
+            </Grid.RowDefinitions>
+            <StackPanel Margin="69,21,0,0" VerticalAlignment="Top" HorizontalAlignment="Left"  Height="408" Grid.RowSpan="2">
                 <TextBox Margin="10,5,0,0" Style="{StaticResource ModernTextBox}" Text="Dodawanie Klienta"  Background="#FF353240" FontWeight="Bold" Foreground="White" Width="247" Height="43" IsReadOnly="True" />
                 <TextBox x:Name="ImieK" Margin="10,5,0,0" Style="{StaticResource ModernTextBox}" Text="Imię" TextChanged="ImieK_TextChanged" Background="#FF353240" />
                 <TextBox x:Name="NazwiskoK" Margin="10,5,0,0"  Style="{StaticResource ModernTextBox}" Text="Nazwisko"/>
@@ -23,7 +27,7 @@
                 <Button Content="Dodaj" Height="58" Width="190" Click="Button_Click" Margin="10,25,0,0"/>
             </StackPanel>
 
-            <StackPanel Margin="802,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Left" Height="357">
+            <StackPanel Margin="802,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Left" Height="358">
                 <TextBox Margin="10,5,0,0" Style="{StaticResource ModernTextBox}" Text="Dodawanie Trenera"  Background="#FF353240" FontWeight="Bold" Foreground="White" Width="247" Height="43" IsReadOnly="True" />
                 <TextBox x:Name="ImieT" Margin="10,5,0,0" Text="Imię" Style="{StaticResource ModernTextBox}"/>
                 <TextBox x:Name="NazwiskoT" Margin="10,5,0,0" Text="Nazwisko" Style="{StaticResource ModernTextBox}"/>
@@ -33,6 +37,7 @@
                 </Border>
                 <Button Content="Dodaj" Height="58" Width="189" Margin="10,10,0,0" Click="Button_Click_1"/>
             </StackPanel>
+            <Image Margin="300,10,358,10" Stretch="Fill" Source="C:\Users\HP\Desktop\Nowy folder\trenerzy.png" Grid.RowSpan="2"/>
 
         </Grid>
     </Border>

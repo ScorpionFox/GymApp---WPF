@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace PROJECT.MVVM.ViewModel
 {
+    /// <summary>
+    /// klasa widoku MainView
+    /// </summary>
     class MainViewModel : ObservableObject
     {
         public RelayCommand HomeViewCommand { get; set; }

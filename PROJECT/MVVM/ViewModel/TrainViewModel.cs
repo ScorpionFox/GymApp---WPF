@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace PROJECT.MVVM.ViewModel
 {
+    /// <summary>
+    /// klasa widoku TrainView
+    /// </summary>
     class TrainViewModel
     {
     }

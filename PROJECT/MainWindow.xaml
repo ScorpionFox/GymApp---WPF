@@ -28,15 +28,10 @@
 
             <Grid.RowDefinitions>
                 <RowDefinition Height="80"/>
-                <RowDefinition Height="503*"/>
+                <RowDefinition Height="520"/>
             </Grid.RowDefinitions>
 
             <!-- Logo -->
-            <TextBlock Text="Siłownia"
-                       VerticalAlignment="Center"
-                       HorizontalAlignment="Left"
-                       Foreground="LightGray"
-                       FontSize="25" Height="34" Width="92" Margin="66,0,0,0"/>
 
             <!-- Przyciski menu -->
             <StackPanel Margin="510,7,48,17" Orientation="Horizontal">
@@ -77,6 +72,7 @@
             <ContentControl Grid.Row="1"
                             Margin="10,4,0,10"
                             Content="{Binding CurrentView}"/>
+            <Image Margin="0,0,745,3" Stretch="Fill" Source="C:\Users\HP\Desktop\Nowy folder\Logo.png"/>
             <!-- CurrentView -->
         </Grid>
     </Border>

@@ -9,7 +9,11 @@
              >
     <Border CornerRadius="50"  Background="LightGreen">
         <Grid>
-            <StackPanel Margin="-75,60,866,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="13*"/>
+                <RowDefinition Height="12*"/>
+            </Grid.RowDefinitions>
+            <StackPanel Margin="-75,60,866,0" Grid.RowSpan="2">
 
                 <ComboBox x:Name="Combo" SelectionChanged="ComboBox_SelectionChanged_1" Width="231" Height="45" HorizontalAlignment="Center" Margin="10,10,0,0" FontSize="25" HorizontalContentAlignment="Center" VerticalContentAlignment="Top" BorderBrush="#FF353240" Foreground="Black" OpacityMask="Black" FontWeight="Bold">
                     <ComboBoxItem IsSelected="True">Trenerzy</ComboBoxItem>
@@ -19,7 +23,17 @@
                 </ComboBox>
                 <Button Content="Sprawdź" Height="58" Width="190" HorizontalAlignment="Center" Margin="10,30,0,0" Click="Button_Click" />
             </StackPanel>
-            <DataGrid Margin="624,24,37,24" x:Name="DataGrid" />
+            <DataGrid Margin="624,24,37,24" x:Name="DataGrid" Grid.RowSpan="2" />
+            <Image Margin="243,50,585,34" Stretch="Fill" Source="C:\Users\HP\Desktop\Nowy folder\search.png" Grid.RowSpan="2" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform AngleX="-1.765"/>
+                        <RotateTransform/>
+                        <TranslateTransform X="-4.561"/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
         </Grid>
     </Border>
 </UserControl>

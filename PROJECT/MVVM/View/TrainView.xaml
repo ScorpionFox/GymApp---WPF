@@ -10,7 +10,7 @@
              >
     <Border CornerRadius="50"  Background="LightBlue">
         <Grid>
-            <StackPanel Margin="-75,15,866,0">
+            <StackPanel Margin="-44,15,806,0">
                 <ComboBox SelectionChanged="Combo2_SelectionChanged" x:Name="Combo2" Width="231" Height="45" HorizontalAlignment="Center" Margin="10,10,0,0" FontSize="25" HorizontalContentAlignment="Center" VerticalContentAlignment="Top" BorderBrush="#FF353240" Foreground="Black" OpacityMask="Black" FontWeight="Bold">
                     <ComboBoxItem IsSelected="True">Trenerzy</ComboBoxItem>
                     <ComboBoxItem>Klienci</ComboBoxItem>
@@ -23,7 +23,7 @@
                 </Border>
                 <Button Content="Usuń" Height="58" Width="190" HorizontalAlignment="Center" Margin="10,30,0,0" Click="Button_Click" />
             </StackPanel>
-            <!-- <Image Margin="340,88,22,134" Stretch="Fill" Source="C:\Users\HP\source\repos\PROJECT\PROJECT\Images\Mięśnie brzucha.jpg"/> -->
+            <Image Margin="381,10,171,10" Stretch="Fill" Source="C:\Users\HP\Desktop\Nowy folder\kick.png"/>
         </Grid>
     </Border>
 </UserControl>
